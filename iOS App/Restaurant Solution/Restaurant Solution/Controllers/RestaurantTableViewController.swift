@@ -10,12 +10,12 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
 
-	var restaurants:[Restaurant]
+	var restaurants = [Restaurant]()
 
     override func viewDidLoad() {
 		print("viewDidLoad")
         super.viewDidLoad()
-		
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
