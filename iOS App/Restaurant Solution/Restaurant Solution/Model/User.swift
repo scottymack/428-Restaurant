@@ -21,11 +21,11 @@ class User
     
     // TODO: Fill this with data from the sign up process
 //    var profilePicture:UIImage = UIImage(named: "")!
-    var firstName = "Scott"
-    var lastName = "McKenzie"
+    var firstName = "First"
+    var lastName = "Last"
     var email = "example@example.com"
     var username = ""
-    var birthday = "11/28/1992"
-    var phoneNumber = "(208) 957 4100"
-    var gender = "Male"
+    var birthday = "01/01/1992"
+    var phoneNumber = "(801) 123 4567"
+    var gender = "Something"
 }
