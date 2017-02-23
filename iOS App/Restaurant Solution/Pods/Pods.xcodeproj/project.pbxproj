@@ -7,156 +7,341 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0104830478F68244D9627F6DC205D940 /* MetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04271C531AA0FA2A5FC46E375383D04D /* MetadataManager.swift */; };
-		08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */; };
-		0A0E4409D9DAE435A35BAD353F02E60A /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5C2E660E0E1FB8C9AD354A03EB854C /* Formatter.swift */; };
-		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68E174D0025C017EE6EB020917BF965 /* IQUIView+IQKeyboardToolbar.swift */; };
-		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B64982E6A8AEFAC198A601648BD84 /* IQUITextFieldView+Additions.swift */; };
-		1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B2FC5D6D175BDDC25F98A665FE652D /* CoreGraphics.framework */; };
-		1DC10B57AE48249813407CE51D1135B2 /* Pods-Restaurant Solution-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF87678F07D24B0C0A5F0EA1D5BCFA8 /* Pods-Restaurant Solution-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4182F9932EEB34E8EA0789DF607C635 /* IQUIScrollView+Additions.swift */; };
-		2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C21540ABB72528FE6BD5E7CD9F59 /* IQUIView+Hierarchy.swift */; };
-		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311FFE54138C39E9B72C1A3F83E0842 /* IQBarButtonItem.swift */; };
-		32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8277EF414DBC625F093C484008053B /* IQTitleBarButtonItem.swift */; };
-		345550ECBA5ABA4FF86DCB480D4A3A58 /* PhoneNumberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F32EF4082837C25F7205B3D352866 /* PhoneNumberParser.swift */; };
+		0104830478F68244D9627F6DC205D940 /* MetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C3AA347324DA361D9E9C117EC86B10 /* MetadataManager.swift */; };
+		01777EB71BE1BD0216B6A5AF5F417898 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		01BDAA411E94189D3E29FC036D2EAC3E /* OAStackViewAlignmentStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C9362A56279D3C3761655F220974BE /* OAStackViewAlignmentStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01F187935B59BC0F4148319A7E4DFEE1 /* OAStackViewAlignmentStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 572072D5AE58B697323952EE8AD06A15 /* OAStackViewAlignmentStrategy.m */; };
+		05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4CBAEBE7F798306B80FF2FAA9CE71 /* View.swift */; };
+		067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289DF5E7C1A744AFEA35BBFE677CA7EB /* Align.swift */; };
+		08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		09C3276B165F28844166493F2125DB8A /* Malert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB5397B7A5F4EB542A33F6031D24A2C /* Malert-dummy.m */; };
+		0A0E4409D9DAE435A35BAD353F02E60A /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E41DB31CAA01240B7BCCADB7CCF60D /* Formatter.swift */; };
+		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3B33923023A31774B4891C3F38ED4 /* IQUIView+IQKeyboardToolbar.swift */; };
+		0E8D433EF80D3D5A9AF103E7CCCF6EDE /* MalertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1133669F55FBD2F8862FCA72EE195CB0 /* MalertView.swift */; };
+		113D03F2FC7D3D3066636E5D0A09F308 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFF5FA6DAA4A4DD413DCDD70AB80168 /* Cartography.framework */; };
+		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796B035FDA0449ABFB6BA76694DD519 /* IQUITextFieldView+Additions.swift */; };
+		1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B724524BFF9344E1D67B245F8A3E7DF /* LayoutProxy.swift */; };
+		1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E094D669F57BCF2A77326562B41E218F /* CoreGraphics.framework */; };
+		1EEAA03BEB2A6A65C097C8F9FDD0788B /* OAStackView.h in Headers */ = {isa = PBXBuildFile; fileRef = 357FCDAF40E2D3A99E984621988E4F4C /* OAStackView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E09C01B01600A47226CEDE7C3B62AF /* MalertAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCBAE535EE01F096C61FA3C9857AD5 /* MalertAnimation.swift */; };
+		22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28203DC873D4255F61A41D0E3C3A28D /* Priority.swift */; };
+		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7CB9DD2DD2D53085640508AC6F83D /* IQUIScrollView+Additions.swift */; };
+		24EF682ACFF8F1CEA8BDDAA340220AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		26B6108B7E5B573E5C56EFA7EBC35173 /* Pods-Restaurant Solution-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6168F4C343C833DCFAE4C9462A513F7B /* Pods-Restaurant Solution-dummy.m */; };
+		2BC48BA9EC7B6F6F334FB9CF2758D461 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9E65459C6475D9AB8EA437721691F1 /* IQUIView+Hierarchy.swift */; };
+		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A48C9B82E6FEBB7EC100E6B939089 /* IQBarButtonItem.swift */; };
+		32D47B0AE0C145C1E9662CC2468FED0E /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4FC06A7F438B27E7BF895BE7D9FD4 /* IQTitleBarButtonItem.swift */; };
+		345550ECBA5ABA4FF86DCB480D4A3A58 /* PhoneNumberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C451C98DBF8461B8B6B29026B11B1E /* PhoneNumberParser.swift */; };
+		39B833C54346AEF7A3319C74C4F733B3 /* OAStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 749D07B395BBCFA755BC57B394E5CFA2 /* OAStackView.m */; };
+		3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EC27D292AC895D7EABFD33662E8DC /* Constrain.swift */; };
 		44257322ABC066758C58B7CA9708F3C3 /* Pods-Restaurant SolutionUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FB1602270676528D5B76EDF6366BFB /* Pods-Restaurant SolutionUITests-dummy.m */; };
 		4546EAA74EE5DC4BDB1E677332CA2F90 /* Pods-Restaurant SolutionTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 260825C03186635A4CD0A3C2FB288DFD /* Pods-Restaurant SolutionTests-dummy.m */; };
-		4F9F1A87FA2940B18DBD32B0180D50FA /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 194C70AAEB6CAA7694BAA1127E1ADEE5 /* PhoneNumberMetadata.json */; };
-		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A3954F414440EC1EDD3CA8C13A95EA /* IQKeyboardManagerSwift-dummy.m */; };
-		5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ED9C79B0F7015BAA79BB74DA4A5BAF /* IQKeyboardReturnKeyHandler.swift */; };
-		5F74DB5E632AB8F370CADB9A57A62905 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379D15E9D6DEA748F82DAE00821BAAF /* ParseManager.swift */; };
-		6A46CC58CC324A02DCE447DB233C7872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */; };
-		7358A93C9FC5598A4E68C8A74B916747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */; };
+		4F519A283FBF9E9CB3FFB03285C21CCF /* OATransformLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6E66EECC0BDDA9A4EA39527EC9CC99 /* OATransformLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9F1A87FA2940B18DBD32B0180D50FA /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = A8B88A059607AFE9F96977D8F5FE86EA /* PhoneNumberMetadata.json */; };
+		51E3F9BB4968BD56DE99E795F8A38FC4 /* OAStackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA090D3FC913F5AD17931D60B9B281BB /* OAStackView.framework */; };
+		5302622AB629B7F6B5BB910E7A8DD5B8 /* OAStackView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCEEE6B717BDCED0E71F21F34E678A74 /* OAStackView.bundle */; };
+		556C50ED37A8AA5A28B97DE9AFC0B973 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB419D2ED2A8BB084288EA104531CDC /* UIViewExtensions.swift */; };
+		56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36613DC1D7C36D99B299987B69918F7F /* LayoutSupport.swift */; };
+		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C498074FCE5CBF588765FB02FF23BBAA /* IQKeyboardManagerSwift-dummy.m */; };
+		5C1B7FB4706A09F7E95F26B02797BE19 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06601DABCB157EF74C613EE54D37774 /* IQKeyboardReturnKeyHandler.swift */; };
+		5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908E69D6620734F2E3AD6B3DD2BD289F /* ConstraintGroup.swift */; };
+		5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A15E0071728BC64C70700363DD869A6 /* Compound.swift */; };
+		5F74DB5E632AB8F370CADB9A57A62905 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00393429A5F8A251D0A3B18C27D053 /* ParseManager.swift */; };
+		6732DA129CBA33CE9638CB4FA393C135 /* OAStackView+Traversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C1B528638C8AA5C7A4496BE98E5B99 /* OAStackView+Traversal.m */; };
+		697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B15A7615E06D7E46502165EE8996A32 /* Expression.swift */; };
+		6A46CC58CC324A02DCE447DB233C7872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		6C4184A3E38DEEBA1C745CBCF403CBC0 /* Malert_brand.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BCEF4A42BCBA1889503AE4ED28F4BA /* Malert_brand.png */; };
+		6D3EAF75F12594DB5A56B20DDF325277 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		6E0FBE924D72E699AFF6E356795AD877 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		7358A93C9FC5598A4E68C8A74B916747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A60B2B514E791D539090A42DB13197 /* Size.swift */; };
+		7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BFE368E02E4DDC2B9E5A4CA1FB444 /* Distribute.swift */; };
+		7D516B180720DC86A5BA0F784CB210B8 /* OAStackViewAlignmentStrategyBaseline.h in Headers */ = {isa = PBXBuildFile; fileRef = 256C48D3523A35312021E94F9269F4A9 /* OAStackViewAlignmentStrategyBaseline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8194D3D71E6F8FFE3C968BB541F435F9 /* Pods-Restaurant SolutionTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADBF90BEEA278282A137F779F025012 /* Pods-Restaurant SolutionTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE461B46E90A17B880028FFDCBD6F3C /* IQKeyboardManagerConstants.swift */; };
-		9BF0B3132715704E433B205423D73740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0AA89B2EC308ED24B9B9485D7B18E /* Constants.swift */; };
-		9C8BF7D4C243818BF3FBF03E54F44295 /* PhoneNumberKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB1BAE16739B1FA6C50CA2ADFF0448 /* PhoneNumberKit-dummy.m */; };
-		9E83CFF9340B8E5CB44CE03DA3F6FBC7 /* Pods-Restaurant Solution-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6168F4C343C833DCFAE4C9462A513F7B /* Pods-Restaurant Solution-dummy.m */; };
-		A0BE20D8E098D375D98F41E9189A7DCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */; };
-		A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82754AA13CC15E2A5F2A81900CE21542 /* IQPreviousNextView.swift */; };
-		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C214A8457801DC88EDFEBCF12E1AB1C0 /* IQKeyboardManager.swift */; };
-		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B174276CE811E5646F012C1C46FA6CC /* IQToolbar.swift */; };
-		AECF93568D922159B76A632196FCA6E9 /* NSRegularExpression+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183FE58407E6FC7EBA05E8845FDF24B /* NSRegularExpression+Swift.swift */; };
-		B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84612924C4846EC8D8429905AC14B67 /* IQTextView.swift */; };
-		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 524937795CB6DFD285B410749E5D97E6 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6EADA01029546ADA5D4718F1471799C /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6706C987DFBA380FDFA51C4CF664F1F1 /* PhoneNumber.swift */; };
-		B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52DF8DD4F84666796ABF0166B0CF60 /* UIKit.framework */; };
-		B9F18EA9601FBE8D39E0EC20AAC68532 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3854B5653FF2C2A24A311B10E923D1C2 /* CoreTelephony.framework */; };
-		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07906199DF96C9F7C1BBDF9CCD4B583 /* IQKeyboardManagerConstantsInternal.swift */; };
+		820B41D5C7691E51A0AE7A57F69A2883 /* OATransformLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DEFFFBAAC518D982EBA4F9FE9BF2CF /* OATransformLayer.m */; };
+		8738424055D203ADA779FF84C0919D97 /* MalertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22769B8F6E52EA5F7E4FFE85882AEB4A /* MalertViewController.swift */; };
+		88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0414A07FCEAF40762384F38DA2C2B9 /* Point.swift */; };
+		89469AF71C285D8AB7A38D90E35D1A76 /* OAStackView+Traversal.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC85E255F4E89CC29EB6D3B5B62995A /* OAStackView+Traversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89959176E9E2C981CE0A235B706E8AA7 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D3772B6D452EAC6F88C5FCF9DD5D27 /* IQKeyboardManagerConstants.swift */; };
+		8D008D47DB37346DCC529F187F8B7CFA /* OAStackView+Hiding.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2355E8766BBB11FE33AC32CCAB6C8 /* OAStackView+Hiding.m */; };
+		9A9A970C183A7D43EE5B54C3F6AE8047 /* Pods-Restaurant Solution-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF87678F07D24B0C0A5F0EA1D5BCFA8 /* Pods-Restaurant Solution-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD88EDFAA29ED710F7D9B48EA91550 /* ViewUtils.swift */; };
+		9BCF13163832E9A2C25A598D1EAED837 /* MalertViewStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D635A66B345718E15236AD6EA9A71F /* MalertViewStructs.swift */; };
+		9BF0B3132715704E433B205423D73740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1B8CA574307B083DA34FF692C6ED0 /* Constants.swift */; };
+		9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B5ED80437E1E58F4D9D5D192BB7668 /* Context.swift */; };
+		9C8BF7D4C243818BF3FBF03E54F44295 /* PhoneNumberKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680D1D325F8A183EA6C3BA20BBE74B9 /* PhoneNumberKit-dummy.m */; };
+		A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD982F4C3EBD08BE34DA3DAC709553 /* Edges.swift */; };
+		A0BE20D8E098D375D98F41E9189A7DCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */; };
+		A50218EC76648886FE767F1DCD9626DE /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C537221CB8A80E361943F0EBFAED13A /* IQPreviousNextView.swift */; };
+		A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8EB1414FE6344868B691CE89FCF0F /* Extensions.swift */; };
+		A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8D4F0CDFAAAAE556766E85CB2D1EF /* Property.swift */; };
+		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAC80FD0C3AEBAE2CC5273BB355BBD3 /* IQKeyboardManager.swift */; };
+		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65A7E62742FABCC9BACF19F81E12E19 /* IQToolbar.swift */; };
+		AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C541516F4C18A84E52B03F95B5DCB432 /* Cartography-dummy.m */; };
+		AECF93568D922159B76A632196FCA6E9 /* NSRegularExpression+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACCCCE3586102CDC9F1965C72EB3739 /* NSRegularExpression+Swift.swift */; };
+		B0E679FF770EE8E7073391580C373D92 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DC96F501126849F9EB48A57690E2E /* IQTextView.swift */; };
+		B1EA18399B63C13C9C51A76867668597 /* _OALayoutGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E17186E42882763788E6A98A56BA83C /* _OALayoutGuide.m */; };
+		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 126180997DE73666BDB6D1EE7C98ABD6 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5610F0ADC26C7BC5F95F0998D020019 /* BaseMalertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D122BD3EFEEC66B059A06B98F5859B9 /* BaseMalertViewController.swift */; };
+		B6EADA01029546ADA5D4718F1471799C /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453252FB1CFB9CE94C37895C7959FF63 /* PhoneNumber.swift */; };
+		B8527C4496855C2EA3597F3BBD06088E /* _OALayoutGuide.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F76699EE5B393F0C81ABD5649E499AD /* _OALayoutGuide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84788942E92282358B3139F38A2A255 /* UIKit.framework */; };
+		B9F18EA9601FBE8D39E0EC20AAC68532 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33FEA0743C7C5BBACEF702F42C94DC9 /* CoreTelephony.framework */; };
+		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5A9EDC2F552451FAC1ABCA84473FCA /* IQKeyboardManagerConstantsInternal.swift */; };
 		C0087B49E545F9E10AFFD4CE418E9654 /* Pods-Restaurant SolutionUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8DA8B1002B17B9CEF277933346CD71 /* Pods-Restaurant SolutionUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E51C6CD49912C9F1BF35F18444C5E11 /* IQUIWindow+Hierarchy.swift */; };
-		C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E25BBD7BE2038F4A48C2562FC27D825 /* IQUIViewController+Additions.swift */; };
-		D4D11238776F6517BE1E5BF70ABBF452 /* PhoneNumberKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C630A6705C029201CA1D44CD339B90D3 /* PhoneNumberKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 68219D38F6498CC0CBD106B5EA14539F /* IQKeyboardManager.bundle */; };
-		D83522A96EB0E8AC32E66D149A4C7D13 /* MetadataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3D7D582AD49BB76765E352AA09BF2 /* MetadataTypes.swift */; };
-		DE55BD4C94E4DC015ACEEA170DE9B85B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */; };
-		E2CDF70ADCB177E5A75995E34BF537A1 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25C0C6FFA2DA85C5EEC235BA29D9CA /* TextField.swift */; };
-		E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F808B52AC1C37FE564FB0ED203F7E /* IQNSArray+Sort.swift */; };
-		F0AAC8C0A171F5D16D5CC4EDFCFD3AA1 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9BAAB4A956BC8235A20B94FF83FC77 /* RegexManager.swift */; };
-		F3471ADCD4C3F3995D27362A2DA5054A /* PhoneNumberKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18313D578B993320048593D17EA45DCD /* PhoneNumberKit.swift */; };
-		FD2E20B69C2E19818E62F6570D93917C /* PartialFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E5229A4E5F83AFE02E744CA26BBB0 /* PartialFormatter.swift */; };
+		C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A305D34451466AF06F1A11ADCCE2A428 /* Constraint.swift */; };
+		C575ADB5ADFB1B9480D368E48CF61DF9 /* MalertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE83646E02ACB730D45B6E9B902E6EA /* MalertButton.swift */; };
+		C759ACB2C97ED8A9EC91C2DF79C95F1D /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEC1EE31C2C17CE51EC233010ED54CC /* IQUIWindow+Hierarchy.swift */; };
+		C92BC0B8E4CBCFD16762838B30654F29 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE99AA6A53BA4F14DA34E15897F1A5 /* IQUIViewController+Additions.swift */; };
+		CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB396BF3E637C21A8A1EA5BD2D86E340 /* Edge.swift */; };
+		D1DEF690995079B93F683D33F4789F4A /* MalertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B7ECA4BFDE41C53F86D7E73594FD26 /* MalertManager.swift */; };
+		D4D11238776F6517BE1E5BF70ABBF452 /* PhoneNumberKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E268A97C655F2EA87A39B2A9DBD24663 /* PhoneNumberKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5F84ED4A1D7B0D6625C5B081737A06F /* OAStackViewAlignmentStrategyBaseline.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A13CDFCB0034E52BA11300AF32EC23 /* OAStackViewAlignmentStrategyBaseline.m */; };
+		D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACCA5F1294D142CF186C437CC79087BE /* IQKeyboardManager.bundle */; };
+		D6792B1AB1650CD33762A894D0706722 /* OAStackViewDistributionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C5DF366A7147D8AC5169D8B785190C /* OAStackViewDistributionStrategy.m */; };
+		D83522A96EB0E8AC32E66D149A4C7D13 /* MetadataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87262C94C235A17B5EE7A27FC7BF23 /* MetadataTypes.swift */; };
+		DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD813C95A26CC2076465EB2F6ACB80E /* Dimension.swift */; };
+		DDC6BB077F4F1EBF5A4339699103D87D /* OAStackViewDistributionStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = E72FECCEC788B929328CBA4750E26F5D /* OAStackViewDistributionStrategy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E20462130EC69283A045A56343A1B601 /* OAStackView+Hiding.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA1F8330B98F4040F049C0D5BE6243E /* OAStackView+Hiding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2CDF70ADCB177E5A75995E34BF537A1 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C2874A51C66259C9170FAC993763F5 /* TextField.swift */; };
+		E60B2BB55697FB5FD5F55D7564EA80CB /* Malert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13426D38724A2AC89CE979A3A8BAB49E /* Malert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9AD3D7B3B4B82CD4D9B817109239F55 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A97BF7276E80467A38C585E3A1875 /* IQNSArray+Sort.swift */; };
+		EF2EA70FA1022021C0BE8DA37459181E /* OAStackView+Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D3E9633CA944F6599AFFC89CCD2B7B /* OAStackView+Constraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0AAC8C0A171F5D16D5CC4EDFCFD3AA1 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B78DEBC8F0041F8F926BA8992A7CF24 /* RegexManager.swift */; };
+		F3471ADCD4C3F3995D27362A2DA5054A /* PhoneNumberKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6618055D95352EAA9493856EDC1BB8 /* PhoneNumberKit.swift */; };
+		F3D29632B65FE2DF755EEBA8589297AD /* OAStackView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6F87748AA1D0C9F827F5D1BD774965 /* OAStackView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5F8FDEF431450F54212E739FC142F60 /* OAStackView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787F0DA0FCB7051ECC90BD7E850DE4AE /* OAStackView-dummy.m */; };
+		FAF27CD19807CF32158F9A628FC5B855 /* Malert.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1C8503E2094EEB272488BFAEA5271F0D /* Malert.bundle */; };
+		FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101A3CF9CFB8DB70E8927785056555CD /* Coefficients.swift */; };
+		FD2E20B69C2E19818E62F6570D93917C /* PartialFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB3027E44C46F7574C85F44C3382DF4 /* PartialFormatter.swift */; };
+		FD48472C140C646ED53715C73CFB0049 /* OAStackView+Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF0E7C9BB48D72E98A247C211B0514 /* OAStackView+Constraint.m */; };
+		FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B9DDE3FEFA986829211EE030101790 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		219C2C82E3A9F9B5B96110A2458E0B14 /* PBXContainerItemProxy */ = {
+		165EEE183E2AC1C4BE3558194D1F82E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4DC059E04CBA98AEDDB5C34E02D551E9;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
-		8D344379A2D93E57F81B032379A27C11 /* PBXContainerItemProxy */ = {
+		3BE10AD027991574B67B67A1E6E3B6D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A818F34CF7331F05D33412578C7EA3BC;
+			remoteInfo = OAStackView;
+		};
+		597D06A0357A7CD6E4CA0AACE972BDCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CA86973D90B16CFF6E700D6AA156EF0;
+			remoteInfo = "Malert-Malert";
+		};
+		5F42A4F732433B259FB3540B6DE2F8AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B89C52A1EC0804E8E942293E8F4F4E00;
+			remoteInfo = Malert;
+		};
+		71B4195CC1FB6FF72F2F7B08AC654D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544212980401A6DA7806F65EAD8C6637;
+			remoteInfo = Cartography;
+		};
+		75E75F62A1096923C1A892AEDEC8649F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8C5BD10883BD185426DD737247F56DEC;
 			remoteInfo = PhoneNumberKit;
 		};
+		9FBCB2EDDE46E57D2A7195FA235956DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24F63B91FBD7A66746C7CA867D2C09B0;
+			remoteInfo = "OAStackView-OAStackView";
+		};
+		E474A653C5FCF55A8B52CAB76451805F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544212980401A6DA7806F65EAD8C6637;
+			remoteInfo = Cartography;
+		};
+		F3CA6DF2FFB99551F78FFD0B77C8B933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A818F34CF7331F05D33412578C7EA3BC;
+			remoteInfo = OAStackView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		035B225A2CFAC7B008EB6696D279490E /* Pods_Restaurant_SolutionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_SolutionUITests.framework; path = "Pods-Restaurant SolutionUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04271C531AA0FA2A5FC46E375383D04D /* MetadataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataManager.swift; path = PhoneNumberKit/MetadataManager.swift; sourceTree = "<group>"; };
 		049D73E6DD3E6261EA66A6ABECCF44C2 /* Pods-Restaurant SolutionTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant SolutionTests-resources.sh"; sourceTree = "<group>"; };
-		0B174276CE811E5646F012C1C46FA6CC /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		062AF565BFFC9882434D1CAED294C711 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B724524BFF9344E1D67B245F8A3E7DF /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		0C537221CB8A80E361943F0EBFAED13A /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
+		0D122BD3EFEEC66B059A06B98F5859B9 /* BaseMalertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseMalertViewController.swift; path = Malert/Classes/ViewController/BaseMalertViewController.swift; sourceTree = "<group>"; };
 		0E0B216D7453CBA5DEDCD2F0A5E89418 /* Pods-Restaurant SolutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant SolutionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1750F8B290C85C09FFACF547035A9AE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18313D578B993320048593D17EA45DCD /* PhoneNumberKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberKit.swift; path = PhoneNumberKit/PhoneNumberKit.swift; sourceTree = "<group>"; };
-		194C70AAEB6CAA7694BAA1127E1ADEE5 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.json; path = PhoneNumberKit/Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
-		1B25C0C6FFA2DA85C5EEC235BA29D9CA /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = PhoneNumberKit/UI/TextField.swift; sourceTree = "<group>"; };
-		1EDB8A4708F3A31A67B252CC92BCD687 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		101A3CF9CFB8DB70E8927785056555CD /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		1133669F55FBD2F8862FCA72EE195CB0 /* MalertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertView.swift; path = Malert/Classes/View/MalertView.swift; sourceTree = "<group>"; };
+		126180997DE73666BDB6D1EE7C98ABD6 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		13426D38724A2AC89CE979A3A8BAB49E /* Malert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Malert-umbrella.h"; sourceTree = "<group>"; };
+		148B511ED12E2C2ED2B80EAC28795E2F /* ResourceBundle-Malert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Malert-Info.plist"; sourceTree = "<group>"; };
+		18B714F9325B0A4133EC7EC4BF6AF39D /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PhoneNumberKit.framework; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FD88EDFAA29ED710F7D9B48EA91550 /* ViewUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewUtils.swift; path = Cartography/ViewUtils.swift; sourceTree = "<group>"; };
+		1C8503E2094EEB272488BFAEA5271F0D /* Malert.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Malert.bundle; path = Malert.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EB4CBAEBE7F798306B80FF2FAA9CE71 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
 		205EE2520544F0BB17C4847546954657 /* Pods-Restaurant Solution.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Restaurant Solution.modulemap"; sourceTree = "<group>"; };
-		2183FE58407E6FC7EBA05E8845FDF24B /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSRegularExpression+Swift.swift"; path = "PhoneNumberKit/NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
+		22769B8F6E52EA5F7E4FFE85882AEB4A /* MalertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertViewController.swift; path = Malert/Classes/ViewController/MalertViewController.swift; sourceTree = "<group>"; };
+		22D635A66B345718E15236AD6EA9A71F /* MalertViewStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertViewStructs.swift; path = Malert/Classes/View/MalertViewStructs.swift; sourceTree = "<group>"; };
 		23CE45A9DFCC3707B4C4C8983C5BCAC1 /* Pods-Restaurant Solution-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant Solution-frameworks.sh"; sourceTree = "<group>"; };
+		256C48D3523A35312021E94F9269F4A9 /* OAStackViewAlignmentStrategyBaseline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OAStackViewAlignmentStrategyBaseline.h; path = Pod/Classes/OAStackViewAlignmentStrategyBaseline.h; sourceTree = "<group>"; };
+		25D3E9633CA944F6599AFFC89CCD2B7B /* OAStackView+Constraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OAStackView+Constraint.h"; path = "Pod/Classes/OAStackView+Constraint.h"; sourceTree = "<group>"; };
 		260825C03186635A4CD0A3C2FB288DFD /* Pods-Restaurant SolutionTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Restaurant SolutionTests-dummy.m"; sourceTree = "<group>"; };
-		27B2FC5D6D175BDDC25F98A665FE652D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		2680D1D325F8A183EA6C3BA20BBE74B9 /* PhoneNumberKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNumberKit-dummy.m"; sourceTree = "<group>"; };
+		289DF5E7C1A744AFEA35BBFE677CA7EB /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		299BBCD8CBF8E517389508AF85B1267F /* Malert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Malert.modulemap; sourceTree = "<group>"; };
+		2A083A665D60C0498D65F7E438D957E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A15E0071728BC64C70700363DD869A6 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		2A6C925F5FADF0A65AEF2D6935713C05 /* PhoneNumberKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-prefix.pch"; sourceTree = "<group>"; };
+		2AE83646E02ACB730D45B6E9B902E6EA /* MalertButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertButton.swift; path = Malert/Classes/View/Button/MalertButton.swift; sourceTree = "<group>"; };
 		2AF87678F07D24B0C0A5F0EA1D5BCFA8 /* Pods-Restaurant Solution-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Restaurant Solution-umbrella.h"; sourceTree = "<group>"; };
-		2CE461B46E90A17B880028FFDCBD6F3C /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		2D91C21540ABB72528FE6BD5E7CD9F59 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		2E25BBD7BE2038F4A48C2562FC27D825 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		3854B5653FF2C2A24A311B10E923D1C2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		38ED9C79B0F7015BAA79BB74DA4A5BAF /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		2AF8D4F0CDFAAAAE556766E85CB2D1EF /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		2BD3B33923023A31774B4891C3F38ED4 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		3008F19514A42FB8F0D7FD740CA10051 /* OAStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OAStackView.framework; path = OAStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C1677E51B19A2B19A32C3354DEB2DD /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		341868A7807E2627CADB15849EEED473 /* ResourceBundle-OAStackView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-OAStackView-Info.plist"; sourceTree = "<group>"; };
+		357FCDAF40E2D3A99E984621988E4F4C /* OAStackView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OAStackView.h; path = Pod/Classes/OAStackView.h; sourceTree = "<group>"; };
+		36613DC1D7C36D99B299987B69918F7F /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		36C2874A51C66259C9170FAC993763F5 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = PhoneNumberKit/UI/TextField.swift; sourceTree = "<group>"; };
+		37E41DB31CAA01240B7BCCADB7CCF60D /* Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = PhoneNumberKit/Formatter.swift; sourceTree = "<group>"; };
+		3852A4B52B82F2B7CFEAB7D2B777B4FB /* Malert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Malert-prefix.pch"; sourceTree = "<group>"; };
+		38B5ED80437E1E58F4D9D5D192BB7668 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
 		38F66A81349E2EDD64CECFCBA919BB25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FB1602270676528D5B76EDF6366BFB /* Pods-Restaurant SolutionUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Restaurant SolutionUITests-dummy.m"; sourceTree = "<group>"; };
-		3A89C3479FC5EA8D92B5144D73D141FC /* Pods_Restaurant_Solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_Solution.framework; path = "Pods-Restaurant Solution.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DE7A0EE9C3357C44BADAF1F0845C063 /* PhoneNumberKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PhoneNumberKit.modulemap; sourceTree = "<group>"; };
-		403F32EF4082837C25F7205B3D352866 /* PhoneNumberParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberParser.swift; path = PhoneNumberKit/PhoneNumberParser.swift; sourceTree = "<group>"; };
-		41BD714F5FC13A66A28145F39101CAEB /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		4424EEE25B03602E27F87BF5D2EC44B7 /* Pods_Restaurant_SolutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_SolutionTests.framework; path = "Pods-Restaurant SolutionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		457E5229A4E5F83AFE02E744CA26BBB0 /* PartialFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartialFormatter.swift; path = PhoneNumberKit/PartialFormatter.swift; sourceTree = "<group>"; };
+		3AAC80FD0C3AEBAE2CC5273BB355BBD3 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		3B9BFE368E02E4DDC2B9E5A4CA1FB444 /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		3DB419D2ED2A8BB084288EA104531CDC /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = Malert/Classes/Util/UIViewExtensions.swift; sourceTree = "<group>"; };
+		3DD813C95A26CC2076465EB2F6ACB80E /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		43A4FC06A7F438B27E7BF895BE7D9FD4 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		43D3DBC9DD74FB27428A26CC1E9FA175 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		453252FB1CFB9CE94C37895C7959FF63 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = PhoneNumberKit/PhoneNumber.swift; sourceTree = "<group>"; };
+		46303F444A962C43037E941D36DAD757 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465281DABB33A5B60C25FB3E8FC37426 /* Pods-Restaurant Solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant Solution.release.xcconfig"; sourceTree = "<group>"; };
 		46EAD070343A099104910981C7338D39 /* Pods-Restaurant SolutionUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Restaurant SolutionUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47B3D7D582AD49BB76765E352AA09BF2 /* MetadataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataTypes.swift; path = PhoneNumberKit/MetadataTypes.swift; sourceTree = "<group>"; };
-		48A3954F414440EC1EDD3CA8C13A95EA /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		4B11E4CB8579A6C12B7D7AE3CEB9894A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E2B64982E6A8AEFAC198A601648BD84 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		4E51C6CD49912C9F1BF35F18444C5E11 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
-		4E717E2F0A2630B6C3426FDAB0304EAF /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		524937795CB6DFD285B410749E5D97E6 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		471DC96F501126849F9EB48A57690E2E /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		4ACCCCE3586102CDC9F1965C72EB3739 /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSRegularExpression+Swift.swift"; path = "PhoneNumberKit/NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
+		4B78DEBC8F0041F8F926BA8992A7CF24 /* RegexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexManager.swift; path = PhoneNumberKit/RegexManager.swift; sourceTree = "<group>"; };
+		4C87262C94C235A17B5EE7A27FC7BF23 /* MetadataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataTypes.swift; path = PhoneNumberKit/MetadataTypes.swift; sourceTree = "<group>"; };
+		4E17186E42882763788E6A98A56BA83C /* _OALayoutGuide.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _OALayoutGuide.m; path = Pod/Classes/_OALayoutGuide.m; sourceTree = "<group>"; };
+		4E5A9EDC2F552451FAC1ABCA84473FCA /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		54A13CDFCB0034E52BA11300AF32EC23 /* OAStackViewAlignmentStrategyBaseline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OAStackViewAlignmentStrategyBaseline.m; path = Pod/Classes/OAStackViewAlignmentStrategyBaseline.m; sourceTree = "<group>"; };
 		551E2CDDF27F04BD56898B2C3ED3DC7D /* Pods-Restaurant Solution-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Restaurant Solution-acknowledgements.plist"; sourceTree = "<group>"; };
+		572072D5AE58B697323952EE8AD06A15 /* OAStackViewAlignmentStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OAStackViewAlignmentStrategy.m; path = Pod/Classes/OAStackViewAlignmentStrategy.m; sourceTree = "<group>"; };
 		59518440CBE876E6483236B6222CE04A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ADBF90BEEA278282A137F779F025012 /* Pods-Restaurant SolutionTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Restaurant SolutionTests-umbrella.h"; sourceTree = "<group>"; };
-		5DD4712469D465B4EA7BBB097B832C4B /* PhoneNumberKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-prefix.pch"; sourceTree = "<group>"; };
-		5F9BAAB4A956BC8235A20B94FF83FC77 /* RegexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexManager.swift; path = PhoneNumberKit/RegexManager.swift; sourceTree = "<group>"; };
+		5B9E65459C6475D9AB8EA437721691F1 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		5DFF0E7C9BB48D72E98A247C211B0514 /* OAStackView+Constraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OAStackView+Constraint.m"; path = "Pod/Classes/OAStackView+Constraint.m"; sourceTree = "<group>"; };
+		5F76699EE5B393F0C81ABD5649E499AD /* _OALayoutGuide.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _OALayoutGuide.h; path = Pod/Classes/_OALayoutGuide.h; sourceTree = "<group>"; };
+		60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6168F4C343C833DCFAE4C9462A513F7B /* Pods-Restaurant Solution-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Restaurant Solution-dummy.m"; sourceTree = "<group>"; };
-		6706C987DFBA380FDFA51C4CF664F1F1 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = PhoneNumberKit/PhoneNumber.swift; sourceTree = "<group>"; };
+		64C451C98DBF8461B8B6B29026B11B1E /* PhoneNumberParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberParser.swift; path = PhoneNumberKit/PhoneNumberParser.swift; sourceTree = "<group>"; };
+		64DEFFFBAAC518D982EBA4F9FE9BF2CF /* OATransformLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OATransformLayer.m; path = Pod/Classes/OATransformLayer.m; sourceTree = "<group>"; };
 		674F63DC9B36BBCE8E0F48DDACA21CC7 /* Pods-Restaurant SolutionTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant SolutionTests-frameworks.sh"; sourceTree = "<group>"; };
-		68219D38F6498CC0CBD106B5EA14539F /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		6B15A7615E06D7E46502165EE8996A32 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		6CEC1EE31C2C17CE51EC233010ED54CC /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		6E06884CCCCE4DBD5DC32753182C6EBA /* Pods_Restaurant_Solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_Solution.framework; path = "Pods-Restaurant Solution.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8EC27D292AC895D7EABFD33662E8DC /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
 		718DD7301ECEC721C9DB1D925ABD1C63 /* Pods-Restaurant SolutionUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant SolutionUITests-resources.sh"; sourceTree = "<group>"; };
-		72876C0F3BFE75D5C7527B769A127055 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PhoneNumberKit.framework; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		749D07B395BBCFA755BC57B394E5CFA2 /* OAStackView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OAStackView.m; path = Pod/Classes/OAStackView.m; sourceTree = "<group>"; };
+		75C1B528638C8AA5C7A4496BE98E5B99 /* OAStackView+Traversal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OAStackView+Traversal.m"; path = "Pod/Classes/OAStackView+Traversal.m"; sourceTree = "<group>"; };
 		76E5D5698F56F1041D274B606C5E42D4 /* Pods-Restaurant SolutionUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Restaurant SolutionUITests.modulemap"; sourceTree = "<group>"; };
+		787F0DA0FCB7051ECC90BD7E850DE4AE /* OAStackView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAStackView-dummy.m"; sourceTree = "<group>"; };
 		78BA1938DD07CBBDCBCEAB8122196FF6 /* Pods-Restaurant Solution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant Solution.debug.xcconfig"; sourceTree = "<group>"; };
+		793BCD2E9C3EAADE9DA5E196C0872509 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79A2CE2C4299204CBDF8B4BF1AA29758 /* OAStackView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAStackView-prefix.pch"; sourceTree = "<group>"; };
 		7B0A8EF24B2D7F9AB6E314081E5B6F94 /* Pods-Restaurant Solution-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Restaurant Solution-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7C242A78DA8E759E95C7B79E165B3263 /* Pods-Restaurant SolutionUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant SolutionUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAStackView.xcconfig; sourceTree = "<group>"; };
 		7DF8C6A86B526C318A5676797D5C87F1 /* Pods-Restaurant SolutionTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Restaurant SolutionTests.modulemap"; sourceTree = "<group>"; };
-		82754AA13CC15E2A5F2A81900CE21542 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		8FEB1BAE16739B1FA6C50CA2ADFF0448 /* PhoneNumberKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNumberKit-dummy.m"; sourceTree = "<group>"; };
-		939F808B52AC1C37FE564FB0ED203F7E /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		7EDBEA3B2DC1645E53A3E18520B7B05E /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		7F0C40673F7C608F783D323AB437C4A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B9DDE3FEFA986829211EE030101790 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		818B8AD028B5569AE6EC23BE525870A0 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C36AF2A09F5A2253466C76959E9B34 /* Pods_Restaurant_SolutionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_SolutionUITests.framework; path = "Pods-Restaurant SolutionUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E69D6620734F2E3AD6B3DD2BD289F /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95F799A7132C44EFF2D4C0DE904F215B /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9761EE8108F0D5AA5289AC9902365C33 /* PhoneNumberKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNumberKit.xcconfig; sourceTree = "<group>"; };
-		9BC0AA89B2EC308ED24B9B9485D7B18E /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PhoneNumberKit/Constants.swift; sourceTree = "<group>"; };
-		9D52DF8DD4F84666796ABF0166B0CF60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9B6618055D95352EAA9493856EDC1BB8 /* PhoneNumberKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberKit.swift; path = PhoneNumberKit/PhoneNumberKit.swift; sourceTree = "<group>"; };
+		9B70CB6ECB9C3ADA3958FAD7CEB07C54 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		9CDE99AA6A53BA4F14DA34E15897F1A5 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
 		9DAEFA82857571D8AC066CDFC371328A /* Pods-Restaurant Solution-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Restaurant Solution-resources.sh"; sourceTree = "<group>"; };
-		9E5C2E660E0E1FB8C9AD354A03EB854C /* Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = PhoneNumberKit/Formatter.swift; sourceTree = "<group>"; };
+		9DFF5FA6DAA4A4DD413DCDD70AB80168 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0F60F438C89C404771EF82F5760E33 /* Pods-Restaurant SolutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant SolutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A06601DABCB157EF74C613EE54D37774 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
 		A29A03349238381424510DABAEDDFB38 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A379D15E9D6DEA748F82DAE00821BAAF /* ParseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseManager.swift; path = PhoneNumberKit/ParseManager.swift; sourceTree = "<group>"; };
-		A68E174D0025C017EE6EB020917BF965 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		A305D34451466AF06F1A11ADCCE2A428 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		A48A97BF7276E80467A38C585E3A1875 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		A84788942E92282358B3139F38A2A255 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8B88A059607AFE9F96977D8F5FE86EA /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.json; path = PhoneNumberKit/Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		A8D3772B6D452EAC6F88C5FCF9DD5D27 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		AA4550A5008B95357C72B8460D5B9242 /* Pods-Restaurant SolutionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant SolutionUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AC8277EF414DBC625F093C484008053B /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		ACCA5F1294D142CF186C437CC79087BE /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		AD8DA8B1002B17B9CEF277933346CD71 /* Pods-Restaurant SolutionUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Restaurant SolutionUITests-umbrella.h"; sourceTree = "<group>"; };
-		B4182F9932EEB34E8EA0789DF607C635 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
-		B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B84612924C4846EC8D8429905AC14B67 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		AFB5397B7A5F4EB542A33F6031D24A2C /* Malert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Malert-dummy.m"; sourceTree = "<group>"; };
+		B28203DC873D4255F61A41D0E3C3A28D /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		B311A9FBB63841CC7AADE773C3A9926F /* PhoneNumberKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PhoneNumberKit.modulemap; sourceTree = "<group>"; };
+		B796B035FDA0449ABFB6BA76694DD519 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
 		B9109DD1A7F6E0205BB455BB9B174C4D /* Pods-Restaurant SolutionTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Restaurant SolutionTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B994ABC2136E8B13C4408D284D00D3EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FCBAE535EE01F096C61FA3C9857AD5 /* MalertAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertAnimation.swift; path = Malert/Classes/Util/MalertAnimation.swift; sourceTree = "<group>"; };
+		BA0414A07FCEAF40762384F38DA2C2B9 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		BBB7CB9DD2DD2D53085640508AC6F83D /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
 		BCE87839FDF01374988D91E43D82D73B /* Pods-Restaurant SolutionTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Restaurant SolutionTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C214A8457801DC88EDFEBCF12E1AB1C0 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		C311FFE54138C39E9B72C1A3F83E0842 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
-		C630A6705C029201CA1D44CD339B90D3 /* PhoneNumberKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-umbrella.h"; sourceTree = "<group>"; };
+		BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Malert.xcconfig; sourceTree = "<group>"; };
+		C2BCEF4A42BCBA1889503AE4ED28F4BA /* Malert_brand.png */ = {isa = PBXFileReference; includeInIndex = 1; name = Malert_brand.png; path = Malert/Assets/Malert_brand.png; sourceTree = "<group>"; };
+		C33FEA0743C7C5BBACEF702F42C94DC9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		C498074FCE5CBF588765FB02FF23BBAA /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		C541516F4C18A84E52B03F95B5DCB432 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		C5B2355E8766BBB11FE33AC32CCAB6C8 /* OAStackView+Hiding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OAStackView+Hiding.m"; path = "Pod/Classes/OAStackView+Hiding.m"; sourceTree = "<group>"; };
+		C65A7E62742FABCC9BACF19F81E12E19 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		C7C9362A56279D3C3761655F220974BE /* OAStackViewAlignmentStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OAStackViewAlignmentStrategy.h; path = Pod/Classes/OAStackViewAlignmentStrategy.h; sourceTree = "<group>"; };
+		CCA1F8330B98F4040F049C0D5BE6243E /* OAStackView+Hiding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OAStackView+Hiding.h"; path = "Pod/Classes/OAStackView+Hiding.h"; sourceTree = "<group>"; };
+		CCC85E255F4E89CC29EB6D3B5B62995A /* OAStackView+Traversal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OAStackView+Traversal.h"; path = "Pod/Classes/OAStackView+Traversal.h"; sourceTree = "<group>"; };
+		CCEEE6B717BDCED0E71F21F34E678A74 /* OAStackView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OAStackView.bundle; path = OAStackView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA090D3FC913F5AD17931D60B9B281BB /* OAStackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAStackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC39EF60B738C202BFD0B9ADEFF8CA29 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Cartography.modulemap; sourceTree = "<group>"; };
+		E094D669F57BCF2A77326562B41E218F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E12A48C9B82E6FEBB7EC100E6B939089 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		E268A97C655F2EA87A39B2A9DBD24663 /* PhoneNumberKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-umbrella.h"; sourceTree = "<group>"; };
+		E5A60B2B514E791D539090A42DB13197 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		E5C3AA347324DA361D9E9C117EC86B10 /* MetadataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataManager.swift; path = PhoneNumberKit/MetadataManager.swift; sourceTree = "<group>"; };
+		E6DD982F4C3EBD08BE34DA3DAC709553 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		E72FECCEC788B929328CBA4750E26F5D /* OAStackViewDistributionStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OAStackViewDistributionStrategy.h; path = Pod/Classes/OAStackViewDistributionStrategy.h; sourceTree = "<group>"; };
+		E8D8EB1414FE6344868B691CE89FCF0F /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
 		E9B48F7FCC041F8029383986F82AEF6C /* Pods-Restaurant SolutionUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Restaurant SolutionUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F07906199DF96C9F7C1BBDF9CCD4B583 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		EB6F87748AA1D0C9F827F5D1BD774965 /* OAStackView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAStackView-umbrella.h"; sourceTree = "<group>"; };
+		F09F91134838E16D1D9A3910D540A7D9 /* PhoneNumberKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNumberKit.xcconfig; sourceTree = "<group>"; };
+		F2C5DF366A7147D8AC5169D8B785190C /* OAStackViewDistributionStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OAStackViewDistributionStrategy.m; path = Pod/Classes/OAStackViewDistributionStrategy.m; sourceTree = "<group>"; };
+		F3B523A573B7F980750E399A69FCAACB /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		F3B7ECA4BFDE41C53F86D7E73594FD26 /* MalertManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MalertManager.swift; path = Malert/Classes/Util/MalertManager.swift; sourceTree = "<group>"; };
+		F5E1B8CA574307B083DA34FF692C6ED0 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PhoneNumberKit/Constants.swift; sourceTree = "<group>"; };
+		F61549EDDCA4797715E024ED8C2CE59D /* Pods_Restaurant_SolutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Restaurant_SolutionTests.framework; path = "Pods-Restaurant SolutionTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA32AEE02943C176ECFF5745769627C6 /* Pods-Restaurant SolutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Restaurant SolutionTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB396BF3E637C21A8A1EA5BD2D86E340 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		FB6E66EECC0BDDA9A4EA39527EC9CC99 /* OATransformLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OATransformLayer.h; path = Pod/Classes/OATransformLayer.h; sourceTree = "<group>"; };
+		FB71A825BAA4B6C27A2F5B46FA69894D /* Malert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Malert.framework; path = Malert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC707D90083298EE788A9A800553BF2A /* OAStackView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OAStackView.modulemap; sourceTree = "<group>"; };
+		FD00393429A5F8A251D0A3B18C27D053 /* ParseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseManager.swift; path = PhoneNumberKit/ParseManager.swift; sourceTree = "<group>"; };
+		FEB3027E44C46F7574C85F44C3382DF4 /* PartialFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartialFormatter.swift; path = PhoneNumberKit/PartialFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +371,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72747C8DE12D2667C612F20832E30DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		761554F5306F577313F35D0C045A5B68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,31 +387,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F51D72188DA16B314884AF2BCC8006BB /* Frameworks */ = {
+		7A4AAE12E09D29DA5F684C9BD8B5FE3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE55BD4C94E4DC015ACEEA170DE9B85B /* Foundation.framework in Frameworks */,
+				24EF682ACFF8F1CEA8BDDAA340220AC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B888028B91D87FC2AC689724C45CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0FBE924D72E699AFF6E356795AD877 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89489A75581CBB3D9C95D48EEC1A4698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3EAF75F12594DB5A56B20DDF325277 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC913E985D6B83D13144353CAAA6FEE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113D03F2FC7D3D3066636E5D0A09F308 /* Cartography.framework in Frameworks */,
+				01777EB71BE1BD0216B6A5AF5F417898 /* Foundation.framework in Frameworks */,
+				51E3F9BB4968BD56DE99E795F8A38FC4 /* OAStackView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8B6410E9182BCB96ACD0443721318E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071EECF208A84245DC231693A994E74A /* Resources */ = {
+		188635E1D79E9BD1FD58353F2484FD5D /* PhoneNumberKitCore */ = {
 			isa = PBXGroup;
 			children = (
-				68219D38F6498CC0CBD106B5EA14539F /* IQKeyboardManager.bundle */,
+				F5E1B8CA574307B083DA34FF692C6ED0 /* Constants.swift */,
+				37E41DB31CAA01240B7BCCADB7CCF60D /* Formatter.swift */,
+				E5C3AA347324DA361D9E9C117EC86B10 /* MetadataManager.swift */,
+				4C87262C94C235A17B5EE7A27FC7BF23 /* MetadataTypes.swift */,
+				4ACCCCE3586102CDC9F1965C72EB3739 /* NSRegularExpression+Swift.swift */,
+				FD00393429A5F8A251D0A3B18C27D053 /* ParseManager.swift */,
+				FEB3027E44C46F7574C85F44C3382DF4 /* PartialFormatter.swift */,
+				453252FB1CFB9CE94C37895C7959FF63 /* PhoneNumber.swift */,
+				9B6618055D95352EAA9493856EDC1BB8 /* PhoneNumberKit.swift */,
+				64C451C98DBF8461B8B6B29026B11B1E /* PhoneNumberParser.swift */,
+				4B78DEBC8F0041F8F926BA8992A7CF24 /* RegexManager.swift */,
+				30D359DC9A078E11DF741D160FC4A3A0 /* Resources */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C46E1DDCF696ACD04C2351EED7B135A0 /* iOS */,
-			);
-			name = Frameworks;
+			name = PhoneNumberKitCore;
 			sourceTree = "<group>";
 		};
 		2540524CB5CFDB50065F3959383C94B5 /* Pods-Restaurant Solution */ = {
@@ -240,51 +468,88 @@
 			path = "Target Support Files/Pods-Restaurant Solution";
 			sourceTree = "<group>";
 		};
-		315C2B2AD21E8A3959DBD4FB4181479E /* IQKeyboardManagerSwift */ = {
+		2B2CEAB56FBCACDAC17192D537C5DDA6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C311FFE54138C39E9B72C1A3F83E0842 /* IQBarButtonItem.swift */,
-				C214A8457801DC88EDFEBCF12E1AB1C0 /* IQKeyboardManager.swift */,
-				2CE461B46E90A17B880028FFDCBD6F3C /* IQKeyboardManagerConstants.swift */,
-				F07906199DF96C9F7C1BBDF9CCD4B583 /* IQKeyboardManagerConstantsInternal.swift */,
-				38ED9C79B0F7015BAA79BB74DA4A5BAF /* IQKeyboardReturnKeyHandler.swift */,
-				939F808B52AC1C37FE564FB0ED203F7E /* IQNSArray+Sort.swift */,
-				82754AA13CC15E2A5F2A81900CE21542 /* IQPreviousNextView.swift */,
-				B84612924C4846EC8D8429905AC14B67 /* IQTextView.swift */,
-				AC8277EF414DBC625F093C484008053B /* IQTitleBarButtonItem.swift */,
-				0B174276CE811E5646F012C1C46FA6CC /* IQToolbar.swift */,
-				B4182F9932EEB34E8EA0789DF607C635 /* IQUIScrollView+Additions.swift */,
-				4E2B64982E6A8AEFAC198A601648BD84 /* IQUITextFieldView+Additions.swift */,
-				2D91C21540ABB72528FE6BD5E7CD9F59 /* IQUIView+Hierarchy.swift */,
-				A68E174D0025C017EE6EB020917BF965 /* IQUIView+IQKeyboardToolbar.swift */,
-				2E25BBD7BE2038F4A48C2562FC27D825 /* IQUIViewController+Additions.swift */,
-				4E51C6CD49912C9F1BF35F18444C5E11 /* IQUIWindow+Hierarchy.swift */,
-				071EECF208A84245DC231693A994E74A /* Resources */,
-				CA7990DDC197026CE501109919415439 /* Support Files */,
+				7F0C40673F7C608F783D323AB437C4A2 /* Info.plist */,
+				299BBCD8CBF8E517389508AF85B1267F /* Malert.modulemap */,
+				BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */,
+				AFB5397B7A5F4EB542A33F6031D24A2C /* Malert-dummy.m */,
+				3852A4B52B82F2B7CFEAB7D2B777B4FB /* Malert-prefix.pch */,
+				13426D38724A2AC89CE979A3A8BAB49E /* Malert-umbrella.h */,
+				148B511ED12E2C2ED2B80EAC28795E2F /* ResourceBundle-Malert-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Malert";
+			sourceTree = "<group>";
+		};
+		30D359DC9A078E11DF741D160FC4A3A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8B88A059607AFE9F96977D8F5FE86EA /* PhoneNumberMetadata.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		33E509F88FECB5BC14A878998F271FB3 /* OAStackView */ = {
+			isa = PBXGroup;
+			children = (
+				5F76699EE5B393F0C81ABD5649E499AD /* _OALayoutGuide.h */,
+				4E17186E42882763788E6A98A56BA83C /* _OALayoutGuide.m */,
+				357FCDAF40E2D3A99E984621988E4F4C /* OAStackView.h */,
+				749D07B395BBCFA755BC57B394E5CFA2 /* OAStackView.m */,
+				25D3E9633CA944F6599AFFC89CCD2B7B /* OAStackView+Constraint.h */,
+				5DFF0E7C9BB48D72E98A247C211B0514 /* OAStackView+Constraint.m */,
+				CCA1F8330B98F4040F049C0D5BE6243E /* OAStackView+Hiding.h */,
+				C5B2355E8766BBB11FE33AC32CCAB6C8 /* OAStackView+Hiding.m */,
+				CCC85E255F4E89CC29EB6D3B5B62995A /* OAStackView+Traversal.h */,
+				75C1B528638C8AA5C7A4496BE98E5B99 /* OAStackView+Traversal.m */,
+				C7C9362A56279D3C3761655F220974BE /* OAStackViewAlignmentStrategy.h */,
+				572072D5AE58B697323952EE8AD06A15 /* OAStackViewAlignmentStrategy.m */,
+				256C48D3523A35312021E94F9269F4A9 /* OAStackViewAlignmentStrategyBaseline.h */,
+				54A13CDFCB0034E52BA11300AF32EC23 /* OAStackViewAlignmentStrategyBaseline.m */,
+				E72FECCEC788B929328CBA4750E26F5D /* OAStackViewDistributionStrategy.h */,
+				F2C5DF366A7147D8AC5169D8B785190C /* OAStackViewDistributionStrategy.m */,
+				FB6E66EECC0BDDA9A4EA39527EC9CC99 /* OATransformLayer.h */,
+				64DEFFFBAAC518D982EBA4F9FE9BF2CF /* OATransformLayer.m */,
+				E8BFE36A87A2E0C5248CA636111D5ED6 /* Support Files */,
+			);
+			name = OAStackView;
+			path = OAStackView;
+			sourceTree = "<group>";
+		};
+		4C002721DDA4CCD9318DA71B9CF5A1FB /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E12A48C9B82E6FEBB7EC100E6B939089 /* IQBarButtonItem.swift */,
+				3AAC80FD0C3AEBAE2CC5273BB355BBD3 /* IQKeyboardManager.swift */,
+				A8D3772B6D452EAC6F88C5FCF9DD5D27 /* IQKeyboardManagerConstants.swift */,
+				4E5A9EDC2F552451FAC1ABCA84473FCA /* IQKeyboardManagerConstantsInternal.swift */,
+				A06601DABCB157EF74C613EE54D37774 /* IQKeyboardReturnKeyHandler.swift */,
+				A48A97BF7276E80467A38C585E3A1875 /* IQNSArray+Sort.swift */,
+				0C537221CB8A80E361943F0EBFAED13A /* IQPreviousNextView.swift */,
+				471DC96F501126849F9EB48A57690E2E /* IQTextView.swift */,
+				43A4FC06A7F438B27E7BF895BE7D9FD4 /* IQTitleBarButtonItem.swift */,
+				C65A7E62742FABCC9BACF19F81E12E19 /* IQToolbar.swift */,
+				BBB7CB9DD2DD2D53085640508AC6F83D /* IQUIScrollView+Additions.swift */,
+				B796B035FDA0449ABFB6BA76694DD519 /* IQUITextFieldView+Additions.swift */,
+				5B9E65459C6475D9AB8EA437721691F1 /* IQUIView+Hierarchy.swift */,
+				2BD3B33923023A31774B4891C3F38ED4 /* IQUIView+IQKeyboardToolbar.swift */,
+				9CDE99AA6A53BA4F14DA34E15897F1A5 /* IQUIViewController+Additions.swift */,
+				6CEC1EE31C2C17CE51EC233010ED54CC /* IQUIWindow+Hierarchy.swift */,
+				A8D3A8B193DCD52ACED67D692E2BC4FB /* Resources */,
+				AE013E345B7FABDD13E342E4B4BFA74C /* Support Files */,
 			);
 			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
-		31BC4A4C3E69779F2784952CE1DC39F2 /* Products */ = {
+		5514D7F4BB63F345A9B88C4EC64A2B09 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				95F799A7132C44EFF2D4C0DE904F215B /* IQKeyboardManagerSwift.framework */,
-				72876C0F3BFE75D5C7527B769A127055 /* PhoneNumberKit.framework */,
-				3A89C3479FC5EA8D92B5144D73D141FC /* Pods_Restaurant_Solution.framework */,
-				4424EEE25B03602E27F87BF5D2EC44B7 /* Pods_Restaurant_SolutionTests.framework */,
-				035B225A2CFAC7B008EB6696D279490E /* Pods_Restaurant_SolutionUITests.framework */,
+				36C2874A51C66259C9170FAC993763F5 /* TextField.swift */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4B570E8BD6EEFF4C8B73A039B9400CCD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				315C2B2AD21E8A3959DBD4FB4181479E /* IQKeyboardManagerSwift */,
-				F6B95982E7DC928CDB571E6FECF45CDA /* PhoneNumberKit */,
-			);
-			name = Pods;
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 		71188FB2AEA44F9AB396EEC4C941010B /* Targets Support Files */ = {
@@ -297,37 +562,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		734E4A18770538FDAB24C3134FE24D60 /* PhoneNumberKit */ = {
+			isa = PBXGroup;
+			children = (
+				188635E1D79E9BD1FD58353F2484FD5D /* PhoneNumberKitCore */,
+				86CA0C25AFF83A75B726CAA874A88B32 /* Support Files */,
+				5514D7F4BB63F345A9B88C4EC64A2B09 /* UIKit */,
+			);
+			name = PhoneNumberKit;
+			path = PhoneNumberKit;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				4B570E8BD6EEFF4C8B73A039B9400CCD /* Pods */,
-				31BC4A4C3E69779F2784952CE1DC39F2 /* Products */,
+				972AB51B556D0F89ADC74C1A7A2C9E80 /* Frameworks */,
+				AC54F3C9F0EA00D817B057C8DBA1A5E5 /* Pods */,
+				D9826BAE53E44E534146BD11A75AEE3A /* Products */,
 				71188FB2AEA44F9AB396EEC4C941010B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81F78AF6C95C8B35F09805E618204898 /* Resources */ = {
+		86CA0C25AFF83A75B726CAA874A88B32 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				194C70AAEB6CAA7694BAA1127E1ADEE5 /* PhoneNumberMetadata.json */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		A2CA3AA365906C9D642944BC4621476E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4B11E4CB8579A6C12B7D7AE3CEB9894A /* Info.plist */,
-				3DE7A0EE9C3357C44BADAF1F0845C063 /* PhoneNumberKit.modulemap */,
-				9761EE8108F0D5AA5289AC9902365C33 /* PhoneNumberKit.xcconfig */,
-				8FEB1BAE16739B1FA6C50CA2ADFF0448 /* PhoneNumberKit-dummy.m */,
-				5DD4712469D465B4EA7BBB097B832C4B /* PhoneNumberKit-prefix.pch */,
-				C630A6705C029201CA1D44CD339B90D3 /* PhoneNumberKit-umbrella.h */,
+				2A083A665D60C0498D65F7E438D957E5 /* Info.plist */,
+				B311A9FBB63841CC7AADE773C3A9926F /* PhoneNumberKit.modulemap */,
+				F09F91134838E16D1D9A3910D540A7D9 /* PhoneNumberKit.xcconfig */,
+				2680D1D325F8A183EA6C3BA20BBE74B9 /* PhoneNumberKit-dummy.m */,
+				2A6C925F5FADF0A65AEF2D6935713C05 /* PhoneNumberKit-prefix.pch */,
+				E268A97C655F2EA87A39B2A9DBD24663 /* PhoneNumberKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PhoneNumberKit";
+			sourceTree = "<group>";
+		};
+		972AB51B556D0F89ADC74C1A7A2C9E80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DFF5FA6DAA4A4DD413DCDD70AB80168 /* Cartography.framework */,
+				DA090D3FC913F5AD17931D60B9B281BB /* OAStackView.framework */,
+				D36206715201DB2897E188CF7E32BB6A /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A5DF8E609F7D32EBFDB3C82A0F803A23 /* Pods-Restaurant SolutionUITests */ = {
@@ -348,29 +626,97 @@
 			path = "Target Support Files/Pods-Restaurant SolutionUITests";
 			sourceTree = "<group>";
 		};
-		C46E1DDCF696ACD04C2351EED7B135A0 /* iOS */ = {
+		A8D3A8B193DCD52ACED67D692E2BC4FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				27B2FC5D6D175BDDC25F98A665FE652D /* CoreGraphics.framework */,
-				3854B5653FF2C2A24A311B10E923D1C2 /* CoreTelephony.framework */,
-				B5CE09877D8645FC6F760ED071211F82 /* Foundation.framework */,
-				9D52DF8DD4F84666796ABF0166B0CF60 /* UIKit.framework */,
+				ACCA5F1294D142CF186C437CC79087BE /* IQKeyboardManager.bundle */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		CA7990DDC197026CE501109919415439 /* Support Files */ = {
+		AB5D1D0AFE8BD7870AE62DB7A42FB509 /* Cartography */ = {
 			isa = PBXGroup;
 			children = (
-				1750F8B290C85C09FFACF547035A9AE8 /* Info.plist */,
-				1EDB8A4708F3A31A67B252CC92BCD687 /* IQKeyboardManagerSwift.modulemap */,
-				4E717E2F0A2630B6C3426FDAB0304EAF /* IQKeyboardManagerSwift.xcconfig */,
-				48A3954F414440EC1EDD3CA8C13A95EA /* IQKeyboardManagerSwift-dummy.m */,
-				41BD714F5FC13A66A28145F39101CAEB /* IQKeyboardManagerSwift-prefix.pch */,
-				524937795CB6DFD285B410749E5D97E6 /* IQKeyboardManagerSwift-umbrella.h */,
+				289DF5E7C1A744AFEA35BBFE677CA7EB /* Align.swift */,
+				101A3CF9CFB8DB70E8927785056555CD /* Coefficients.swift */,
+				2A15E0071728BC64C70700363DD869A6 /* Compound.swift */,
+				6F8EC27D292AC895D7EABFD33662E8DC /* Constrain.swift */,
+				A305D34451466AF06F1A11ADCCE2A428 /* Constraint.swift */,
+				908E69D6620734F2E3AD6B3DD2BD289F /* ConstraintGroup.swift */,
+				38B5ED80437E1E58F4D9D5D192BB7668 /* Context.swift */,
+				3DD813C95A26CC2076465EB2F6ACB80E /* Dimension.swift */,
+				3B9BFE368E02E4DDC2B9E5A4CA1FB444 /* Distribute.swift */,
+				FB396BF3E637C21A8A1EA5BD2D86E340 /* Edge.swift */,
+				E6DD982F4C3EBD08BE34DA3DAC709553 /* Edges.swift */,
+				6B15A7615E06D7E46502165EE8996A32 /* Expression.swift */,
+				E8D8EB1414FE6344868B691CE89FCF0F /* Extensions.swift */,
+				0B724524BFF9344E1D67B245F8A3E7DF /* LayoutProxy.swift */,
+				36613DC1D7C36D99B299987B69918F7F /* LayoutSupport.swift */,
+				BA0414A07FCEAF40762384F38DA2C2B9 /* Point.swift */,
+				B28203DC873D4255F61A41D0E3C3A28D /* Priority.swift */,
+				2AF8D4F0CDFAAAAE556766E85CB2D1EF /* Property.swift */,
+				E5A60B2B514E791D539090A42DB13197 /* Size.swift */,
+				1EB4CBAEBE7F798306B80FF2FAA9CE71 /* View.swift */,
+				18FD88EDFAA29ED710F7D9B48EA91550 /* ViewUtils.swift */,
+				F236050AB160C1C6423B202C02BCF118 /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		AC54F3C9F0EA00D817B057C8DBA1A5E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB5D1D0AFE8BD7870AE62DB7A42FB509 /* Cartography */,
+				4C002721DDA4CCD9318DA71B9CF5A1FB /* IQKeyboardManagerSwift */,
+				C2F78F020AFB8A2B9BC3773B74D5FB81 /* Malert */,
+				33E509F88FECB5BC14A878998F271FB3 /* OAStackView */,
+				734E4A18770538FDAB24C3134FE24D60 /* PhoneNumberKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE013E345B7FABDD13E342E4B4BFA74C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				793BCD2E9C3EAADE9DA5E196C0872509 /* Info.plist */,
+				7EDBEA3B2DC1645E53A3E18520B7B05E /* IQKeyboardManagerSwift.modulemap */,
+				9B70CB6ECB9C3ADA3958FAD7CEB07C54 /* IQKeyboardManagerSwift.xcconfig */,
+				C498074FCE5CBF588765FB02FF23BBAA /* IQKeyboardManagerSwift-dummy.m */,
+				43D3DBC9DD74FB27428A26CC1E9FA175 /* IQKeyboardManagerSwift-prefix.pch */,
+				126180997DE73666BDB6D1EE7C98ABD6 /* IQKeyboardManagerSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		C2F78F020AFB8A2B9BC3773B74D5FB81 /* Malert */ = {
+			isa = PBXGroup;
+			children = (
+				0D122BD3EFEEC66B059A06B98F5859B9 /* BaseMalertViewController.swift */,
+				B9FCBAE535EE01F096C61FA3C9857AD5 /* MalertAnimation.swift */,
+				2AE83646E02ACB730D45B6E9B902E6EA /* MalertButton.swift */,
+				F3B7ECA4BFDE41C53F86D7E73594FD26 /* MalertManager.swift */,
+				1133669F55FBD2F8862FCA72EE195CB0 /* MalertView.swift */,
+				22769B8F6E52EA5F7E4FFE85882AEB4A /* MalertViewController.swift */,
+				22D635A66B345718E15236AD6EA9A71F /* MalertViewStructs.swift */,
+				3DB419D2ED2A8BB084288EA104531CDC /* UIViewExtensions.swift */,
+				F67D99A39EBBAEE9FA27916D765A741D /* Resources */,
+				2B2CEAB56FBCACDAC17192D537C5DDA6 /* Support Files */,
+			);
+			name = Malert;
+			path = Malert;
+			sourceTree = "<group>";
+		};
+		D36206715201DB2897E188CF7E32BB6A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E094D669F57BCF2A77326562B41E218F /* CoreGraphics.framework */,
+				C33FEA0743C7C5BBACEF702F42C94DC9 /* CoreTelephony.framework */,
+				60A8E63AF6DD539088E69A34FBDDAD78 /* Foundation.framework */,
+				A84788942E92282358B3139F38A2A255 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		D43A872F0F6E2759A7C0CF63DCBB3BBE /* Pods-Restaurant SolutionTests */ = {
@@ -391,47 +737,71 @@
 			path = "Target Support Files/Pods-Restaurant SolutionTests";
 			sourceTree = "<group>";
 		};
-		DA758FEA01D21AEF33DD6D91F1ACAB64 /* UIKit */ = {
+		D9826BAE53E44E534146BD11A75AEE3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B25C0C6FFA2DA85C5EEC235BA29D9CA /* TextField.swift */,
+				818B8AD028B5569AE6EC23BE525870A0 /* Cartography.framework */,
+				46303F444A962C43037E941D36DAD757 /* IQKeyboardManagerSwift.framework */,
+				1C8503E2094EEB272488BFAEA5271F0D /* Malert.bundle */,
+				FB71A825BAA4B6C27A2F5B46FA69894D /* Malert.framework */,
+				CCEEE6B717BDCED0E71F21F34E678A74 /* OAStackView.bundle */,
+				3008F19514A42FB8F0D7FD740CA10051 /* OAStackView.framework */,
+				18B714F9325B0A4133EC7EC4BF6AF39D /* PhoneNumberKit.framework */,
+				6E06884CCCCE4DBD5DC32753182C6EBA /* Pods_Restaurant_Solution.framework */,
+				F61549EDDCA4797715E024ED8C2CE59D /* Pods_Restaurant_SolutionTests.framework */,
+				88C36AF2A09F5A2253466C76959E9B34 /* Pods_Restaurant_SolutionUITests.framework */,
 			);
-			name = UIKit;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F6B95982E7DC928CDB571E6FECF45CDA /* PhoneNumberKit */ = {
+		E8BFE36A87A2E0C5248CA636111D5ED6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFEC8BB18B949544EF05329B97753756 /* PhoneNumberKitCore */,
-				A2CA3AA365906C9D642944BC4621476E /* Support Files */,
-				DA758FEA01D21AEF33DD6D91F1ACAB64 /* UIKit */,
+				062AF565BFFC9882434D1CAED294C711 /* Info.plist */,
+				FC707D90083298EE788A9A800553BF2A /* OAStackView.modulemap */,
+				7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */,
+				787F0DA0FCB7051ECC90BD7E850DE4AE /* OAStackView-dummy.m */,
+				79A2CE2C4299204CBDF8B4BF1AA29758 /* OAStackView-prefix.pch */,
+				EB6F87748AA1D0C9F827F5D1BD774965 /* OAStackView-umbrella.h */,
+				341868A7807E2627CADB15849EEED473 /* ResourceBundle-OAStackView-Info.plist */,
 			);
-			name = PhoneNumberKit;
-			path = PhoneNumberKit;
+			name = "Support Files";
+			path = "../Target Support Files/OAStackView";
 			sourceTree = "<group>";
 		};
-		FFEC8BB18B949544EF05329B97753756 /* PhoneNumberKitCore */ = {
+		F236050AB160C1C6423B202C02BCF118 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BC0AA89B2EC308ED24B9B9485D7B18E /* Constants.swift */,
-				9E5C2E660E0E1FB8C9AD354A03EB854C /* Formatter.swift */,
-				04271C531AA0FA2A5FC46E375383D04D /* MetadataManager.swift */,
-				47B3D7D582AD49BB76765E352AA09BF2 /* MetadataTypes.swift */,
-				2183FE58407E6FC7EBA05E8845FDF24B /* NSRegularExpression+Swift.swift */,
-				A379D15E9D6DEA748F82DAE00821BAAF /* ParseManager.swift */,
-				457E5229A4E5F83AFE02E744CA26BBB0 /* PartialFormatter.swift */,
-				6706C987DFBA380FDFA51C4CF664F1F1 /* PhoneNumber.swift */,
-				18313D578B993320048593D17EA45DCD /* PhoneNumberKit.swift */,
-				403F32EF4082837C25F7205B3D352866 /* PhoneNumberParser.swift */,
-				5F9BAAB4A956BC8235A20B94FF83FC77 /* RegexManager.swift */,
-				81F78AF6C95C8B35F09805E618204898 /* Resources */,
+				DC39EF60B738C202BFD0B9ADEFF8CA29 /* Cartography.modulemap */,
+				31C1677E51B19A2B19A32C3354DEB2DD /* Cartography.xcconfig */,
+				C541516F4C18A84E52B03F95B5DCB432 /* Cartography-dummy.m */,
+				F3B523A573B7F980750E399A69FCAACB /* Cartography-prefix.pch */,
+				80B9DDE3FEFA986829211EE030101790 /* Cartography-umbrella.h */,
+				B994ABC2136E8B13C4408D284D00D3EB /* Info.plist */,
 			);
-			name = PhoneNumberKitCore;
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		F67D99A39EBBAEE9FA27916D765A741D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCEF4A42BCBA1889503AE4ED28F4BA /* Malert_brand.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		115E0A50337F9B79D08B9FB5AA18F4AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60B2BB55697FB5FD5F55D7564EA80CB /* Malert-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		405199368D07FA054247249F5A0FBAE2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,11 +818,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C00ED52B2EE28E4EE2D16F7486AF7F7E /* Headers */ = {
+		8CB6FA0B66984642AF5F1F342AFF8F0C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC10B57AE48249813407CE51D1135B2 /* Pods-Restaurant Solution-umbrella.h in Headers */,
+				B8527C4496855C2EA3597F3BBD06088E /* _OALayoutGuide.h in Headers */,
+				EF2EA70FA1022021C0BE8DA37459181E /* OAStackView+Constraint.h in Headers */,
+				E20462130EC69283A045A56343A1B601 /* OAStackView+Hiding.h in Headers */,
+				89469AF71C285D8AB7A38D90E35D1A76 /* OAStackView+Traversal.h in Headers */,
+				F3D29632B65FE2DF755EEBA8589297AD /* OAStackView-umbrella.h in Headers */,
+				1EEAA03BEB2A6A65C097C8F9FDD0788B /* OAStackView.h in Headers */,
+				01BDAA411E94189D3E29FC036D2EAC3E /* OAStackViewAlignmentStrategy.h in Headers */,
+				7D516B180720DC86A5BA0F784CB210B8 /* OAStackViewAlignmentStrategyBaseline.h in Headers */,
+				DDC6BB077F4F1EBF5A4339699103D87D /* OAStackViewDistributionStrategy.h in Headers */,
+				4F519A283FBF9E9CB3FFB03285C21CCF /* OATransformLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +843,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E66E0C3AA6C50C06CA3BC63165901BDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4D13CA6A4999D13875761E5100C1A0 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED455331F93209E627AE849F4F64042B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,9 +859,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3150AFCD3533F825064E146A3D94C6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9A970C183A7D43EE5B54C3F6AE8047 /* Pods-Restaurant Solution-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		24F63B91FBD7A66746C7CA867D2C09B0 /* OAStackView-OAStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F310DF5F92658F920023261A006177B /* Build configuration list for PBXNativeTarget "OAStackView-OAStackView" */;
+			buildPhases = (
+				5F9E0877FEF908D5EFF314DB91A2B203 /* Sources */,
+				CF8B6410E9182BCB96ACD0443721318E /* Frameworks */,
+				8234B135F918F46ADE8883B4BBD0486C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OAStackView-OAStackView";
+			productName = "OAStackView-OAStackView";
+			productReference = CCEEE6B717BDCED0E71F21F34E678A74 /* OAStackView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		2CA86973D90B16CFF6E700D6AA156EF0 /* Malert-Malert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F969D6915DEEC43A1D44378BC712384 /* Build configuration list for PBXNativeTarget "Malert-Malert" */;
+			buildPhases = (
+				F00390D90BBE9CAFAAD705A6F3353369 /* Sources */,
+				72747C8DE12D2667C612F20832E30DE9 /* Frameworks */,
+				E5C88F771E1F2601F3A6A905470B1268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Malert-Malert";
+			productName = "Malert-Malert";
+			productReference = 1C8503E2094EEB272488BFAEA5271F0D /* Malert.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		32AF54051133A44A115D7795EDEFF2E2 /* Pods-Restaurant SolutionUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8CFC49783BE2B387C14291C8727AECF /* Build configuration list for PBXNativeTarget "Pods-Restaurant SolutionUITests" */;
@@ -489,7 +918,7 @@
 			);
 			name = "Pods-Restaurant SolutionUITests";
 			productName = "Pods-Restaurant SolutionUITests";
-			productReference = 035B225A2CFAC7B008EB6696D279490E /* Pods_Restaurant_SolutionUITests.framework */;
+			productReference = 88C36AF2A09F5A2253466C76959E9B34 /* Pods_Restaurant_SolutionUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */ = {
@@ -507,7 +936,24 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = 95F799A7132C44EFF2D4C0DE904F215B /* IQKeyboardManagerSwift.framework */;
+			productReference = 46303F444A962C43037E941D36DAD757 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		544212980401A6DA7806F65EAD8C6637 /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4640A3FD22DAF78390468CA450BB29DA /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				F8A87B475BE2E0CA1FFEC5F03DEDB801 /* Sources */,
+				7A4AAE12E09D29DA5F684C9BD8B5FE3B /* Frameworks */,
+				E66E0C3AA6C50C06CA3BC63165901BDD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = 818B8AD028B5569AE6EC23BE525870A0 /* Cartography.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */ = {
@@ -525,7 +971,47 @@
 			);
 			name = PhoneNumberKit;
 			productName = PhoneNumberKit;
-			productReference = 72876C0F3BFE75D5C7527B769A127055 /* PhoneNumberKit.framework */;
+			productReference = 18B714F9325B0A4133EC7EC4BF6AF39D /* PhoneNumberKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A818F34CF7331F05D33412578C7EA3BC /* OAStackView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C73D25A13854CE5F822D9BE1D3FFA1BC /* Build configuration list for PBXNativeTarget "OAStackView" */;
+			buildPhases = (
+				CC7F8F77AA89CD127E07C4132E22EE44 /* Sources */,
+				83B888028B91D87FC2AC689724C45CFC /* Frameworks */,
+				6DEE5AD4C19AC5DDFE397E55585ED7EE /* Resources */,
+				8CB6FA0B66984642AF5F1F342AFF8F0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1926E4C17E9F82B5FA794A2D970EC15B /* PBXTargetDependency */,
+			);
+			name = OAStackView;
+			productName = OAStackView;
+			productReference = 3008F19514A42FB8F0D7FD740CA10051 /* OAStackView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B89C52A1EC0804E8E942293E8F4F4E00 /* Malert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57EBEE7253A016BAFFBE5EE2AA2AB11A /* Build configuration list for PBXNativeTarget "Malert" */;
+			buildPhases = (
+				61DA3F4264BA9E42A6200958D4E3E71E /* Sources */,
+				AC913E985D6B83D13144353CAAA6FEE2 /* Frameworks */,
+				3C2A07EAD47CE58C5AC68C0CA2BBF639 /* Resources */,
+				115E0A50337F9B79D08B9FB5AA18F4AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD2BBA3BC1A8AF80A80A6C1C73D9463C /* PBXTargetDependency */,
+				A276493BA862E8614C33999C87CA79FC /* PBXTargetDependency */,
+				CDA75DE0CC5E81248635F8E6D835C987 /* PBXTargetDependency */,
+			);
+			name = Malert;
+			productName = Malert;
+			productReference = FB71A825BAA4B6C27A2F5B46FA69894D /* Malert.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BD6C6ADBCCA2F2F7A330ED1E1464EE88 /* Pods-Restaurant SolutionTests */ = {
@@ -542,26 +1028,29 @@
 			);
 			name = "Pods-Restaurant SolutionTests";
 			productName = "Pods-Restaurant SolutionTests";
-			productReference = 4424EEE25B03602E27F87BF5D2EC44B7 /* Pods_Restaurant_SolutionTests.framework */;
+			productReference = F61549EDDCA4797715E024ED8C2CE59D /* Pods_Restaurant_SolutionTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF72264FD884FF34A909B49E2D5E4486 /* Pods-Restaurant Solution */ = {
+		E4D4800D41A8A847A5E8821786DFB99E /* Pods-Restaurant Solution */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E6C201A559ADFB3B07FAE32A23C8AAC /* Build configuration list for PBXNativeTarget "Pods-Restaurant Solution" */;
+			buildConfigurationList = 1C414D3A0963FD474E8D07456D52D77C /* Build configuration list for PBXNativeTarget "Pods-Restaurant Solution" */;
 			buildPhases = (
-				8B8B4BBBBAC421A3680DF028C26344B2 /* Sources */,
-				F51D72188DA16B314884AF2BCC8006BB /* Frameworks */,
-				C00ED52B2EE28E4EE2D16F7486AF7F7E /* Headers */,
+				284C203DD234E9BEFCA29A0357AFA4E2 /* Sources */,
+				89489A75581CBB3D9C95D48EEC1A4698 /* Frameworks */,
+				F3150AFCD3533F825064E146A3D94C6B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A83B71F5990F2F0DE93D26093546A826 /* PBXTargetDependency */,
-				DC94A64E8E99819C606C445E826BF6C3 /* PBXTargetDependency */,
+				A38FB3DD46CF4C69604B863B2C9B4CC7 /* PBXTargetDependency */,
+				B358A60D393B5C3D72602F402AA924DF /* PBXTargetDependency */,
+				830254F8C836B2B321660437E201CFA5 /* PBXTargetDependency */,
+				33B95C6A22DD5A8E6A595F75C02549B0 /* PBXTargetDependency */,
+				FDA38AC9E0CD47C937B5E7475A601355 /* PBXTargetDependency */,
 			);
 			name = "Pods-Restaurant Solution";
 			productName = "Pods-Restaurant Solution";
-			productReference = 3A89C3479FC5EA8D92B5144D73D141FC /* Pods_Restaurant_Solution.framework */;
+			productReference = 6E06884CCCCE4DBD5DC32753182C6EBA /* Pods_Restaurant_Solution.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -581,13 +1070,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 31BC4A4C3E69779F2784952CE1DC39F2 /* Products */;
+			productRefGroup = D9826BAE53E44E534146BD11A75AEE3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				544212980401A6DA7806F65EAD8C6637 /* Cartography */,
 				4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */,
+				B89C52A1EC0804E8E942293E8F4F4E00 /* Malert */,
+				2CA86973D90B16CFF6E700D6AA156EF0 /* Malert-Malert */,
+				A818F34CF7331F05D33412578C7EA3BC /* OAStackView */,
+				24F63B91FBD7A66746C7CA867D2C09B0 /* OAStackView-OAStackView */,
 				8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */,
-				EF72264FD884FF34A909B49E2D5E4486 /* Pods-Restaurant Solution */,
+				E4D4800D41A8A847A5E8821786DFB99E /* Pods-Restaurant Solution */,
 				BD6C6ADBCCA2F2F7A330ED1E1464EE88 /* Pods-Restaurant SolutionTests */,
 				32AF54051133A44A115D7795EDEFF2E2 /* Pods-Restaurant SolutionUITests */,
 			);
@@ -595,11 +1089,42 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C2A07EAD47CE58C5AC68C0CA2BBF639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF27CD19807CF32158F9A628FC5B855 /* Malert.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEE5AD4C19AC5DDFE397E55585ED7EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5302622AB629B7F6B5BB910E7A8DD5B8 /* OAStackView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8234B135F918F46ADE8883B4BBD0486C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8913AFCA6CAEB5D9BF81A3A49E9CE1BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D65B8481AFF5531FC2E4382CBA63C057 /* IQKeyboardManager.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5C88F771E1F2601F3A6A905470B1268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4184A3E38DEEBA1C745CBCF403CBC0 /* Malert_brand.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +1144,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				44257322ABC066758C58B7CA9708F3C3 /* Pods-Restaurant SolutionUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		284C203DD234E9BEFCA29A0357AFA4E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B6108B7E5B573E5C56EFA7EBC35173 /* Pods-Restaurant Solution-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,11 +1175,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B8B4BBBBAC421A3680DF028C26344B2 /* Sources */ = {
+		5F9E0877FEF908D5EFF314DB91A2B203 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E83CFF9340B8E5CB44CE03DA3F6FBC7 /* Pods-Restaurant Solution-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DA3F4264BA9E42A6200958D4E3E71E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5610F0ADC26C7BC5F95F0998D020019 /* BaseMalertViewController.swift in Sources */,
+				09C3276B165F28844166493F2125DB8A /* Malert-dummy.m in Sources */,
+				20E09C01B01600A47226CEDE7C3B62AF /* MalertAnimation.swift in Sources */,
+				C575ADB5ADFB1B9480D368E48CF61DF9 /* MalertButton.swift in Sources */,
+				D1DEF690995079B93F683D33F4789F4A /* MalertManager.swift in Sources */,
+				0E8D433EF80D3D5A9AF103E7CCCF6EDE /* MalertView.swift in Sources */,
+				8738424055D203ADA779FF84C0919D97 /* MalertViewController.swift in Sources */,
+				9BCF13163832E9A2C25A598D1EAED837 /* MalertViewStructs.swift in Sources */,
+				556C50ED37A8AA5A28B97DE9AFC0B973 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +1222,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC7F8F77AA89CD127E07C4132E22EE44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EA18399B63C13C9C51A76867668597 /* _OALayoutGuide.m in Sources */,
+				FD48472C140C646ED53715C73CFB0049 /* OAStackView+Constraint.m in Sources */,
+				8D008D47DB37346DCC529F187F8B7CFA /* OAStackView+Hiding.m in Sources */,
+				6732DA129CBA33CE9638CB4FA393C135 /* OAStackView+Traversal.m in Sources */,
+				F5F8FDEF431450F54212E739FC142F60 /* OAStackView-dummy.m in Sources */,
+				39B833C54346AEF7A3319C74C4F733B3 /* OAStackView.m in Sources */,
+				01F187935B59BC0F4148319A7E4DFEE1 /* OAStackViewAlignmentStrategy.m in Sources */,
+				D5F84ED4A1D7B0D6625C5B081737A06F /* OAStackViewAlignmentStrategyBaseline.m in Sources */,
+				D6792B1AB1650CD33762A894D0706722 /* OAStackViewDistributionStrategy.m in Sources */,
+				820B41D5C7691E51A0AE7A57F69A2883 /* OATransformLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6AC9F15C27451B2043F2B4A1CA94046 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -682,27 +1247,105 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F00390D90BBE9CAFAAD705A6F3353369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A87B475BE2E0CA1FFEC5F03DEDB801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067B84F7E9EFBEAFDC824931CAAD2051 /* Align.swift in Sources */,
+				AE7ACD648B84D1C8645049118FE42D54 /* Cartography-dummy.m in Sources */,
+				FC27B916EC313A166CE2704745CB14C0 /* Coefficients.swift in Sources */,
+				5F5D3FB5718F4673DC293DA7D97EF046 /* Compound.swift in Sources */,
+				3F2391D80C5AE124D6E13AD3FABFFE01 /* Constrain.swift in Sources */,
+				C2E2993258D9072061A389E518053F8B /* Constraint.swift in Sources */,
+				5CAA19E0EB7CA9EB6047A3E43EC1FC8F /* ConstraintGroup.swift in Sources */,
+				9C7E8D85506FA06C506A330B200FCEE7 /* Context.swift in Sources */,
+				DBC0D8FEB6A8101C977332E8BC16E641 /* Dimension.swift in Sources */,
+				7965A04590F67375EC65249F774B3F6B /* Distribute.swift in Sources */,
+				CD587D5E28B0428E3B4163F1604D26BF /* Edge.swift in Sources */,
+				A084DDD7233A950676D60FCB4FA8BE74 /* Edges.swift in Sources */,
+				697414FCC3C6F8176768FFDDEC73A108 /* Expression.swift in Sources */,
+				A67286FF819C5C943D027E9C40DF456D /* Extensions.swift in Sources */,
+				1431619A2565DD8EAB817240E078707C /* LayoutProxy.swift in Sources */,
+				56EBA0C77344F63CA6A36265A6496A71 /* LayoutSupport.swift in Sources */,
+				88B21B225B2D6BFAB3F50B88495299F1 /* Point.swift in Sources */,
+				22B60CFF6E57EB6DF8CCA5D2CAC3178C /* Priority.swift in Sources */,
+				A7BD4B74A484170A23FF6C7611A11B40 /* Property.swift in Sources */,
+				74BD0664EEC77366D314DA22DD4E721F /* Size.swift in Sources */,
+				05C1C6C0B246E3C5FDF06B2A0BB63F0D /* View.swift in Sources */,
+				9B71D4856DF9CFE5715EDF4E5B3B2844 /* ViewUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A83B71F5990F2F0DE93D26093546A826 /* PBXTargetDependency */ = {
+		1926E4C17E9F82B5FA794A2D970EC15B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OAStackView-OAStackView";
+			target = 24F63B91FBD7A66746C7CA867D2C09B0 /* OAStackView-OAStackView */;
+			targetProxy = 9FBCB2EDDE46E57D2A7195FA235956DC /* PBXContainerItemProxy */;
+		};
+		33B95C6A22DD5A8E6A595F75C02549B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAStackView;
+			target = A818F34CF7331F05D33412578C7EA3BC /* OAStackView */;
+			targetProxy = F3CA6DF2FFB99551F78FFD0B77C8B933 /* PBXContainerItemProxy */;
+		};
+		830254F8C836B2B321660437E201CFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Malert;
+			target = B89C52A1EC0804E8E942293E8F4F4E00 /* Malert */;
+			targetProxy = 5F42A4F732433B259FB3540B6DE2F8AA /* PBXContainerItemProxy */;
+		};
+		A276493BA862E8614C33999C87CA79FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Malert-Malert";
+			target = 2CA86973D90B16CFF6E700D6AA156EF0 /* Malert-Malert */;
+			targetProxy = 597D06A0357A7CD6E4CA0AACE972BDCF /* PBXContainerItemProxy */;
+		};
+		A38FB3DD46CF4C69604B863B2C9B4CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = 544212980401A6DA7806F65EAD8C6637 /* Cartography */;
+			targetProxy = 71B4195CC1FB6FF72F2F7B08AC654D90 /* PBXContainerItemProxy */;
+		};
+		AD2BBA3BC1A8AF80A80A6C1C73D9463C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = 544212980401A6DA7806F65EAD8C6637 /* Cartography */;
+			targetProxy = E474A653C5FCF55A8B52CAB76451805F /* PBXContainerItemProxy */;
+		};
+		B358A60D393B5C3D72602F402AA924DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = 4DC059E04CBA98AEDDB5C34E02D551E9 /* IQKeyboardManagerSwift */;
-			targetProxy = 219C2C82E3A9F9B5B96110A2458E0B14 /* PBXContainerItemProxy */;
+			targetProxy = 165EEE183E2AC1C4BE3558194D1F82E5 /* PBXContainerItemProxy */;
 		};
-		DC94A64E8E99819C606C445E826BF6C3 /* PBXTargetDependency */ = {
+		CDA75DE0CC5E81248635F8E6D835C987 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAStackView;
+			target = A818F34CF7331F05D33412578C7EA3BC /* OAStackView */;
+			targetProxy = 3BE10AD027991574B67B67A1E6E3B6D3 /* PBXContainerItemProxy */;
+		};
+		FDA38AC9E0CD47C937B5E7475A601355 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PhoneNumberKit;
 			target = 8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */;
-			targetProxy = 8D344379A2D93E57F81B032379A27C11 /* PBXContainerItemProxy */;
+			targetProxy = 75E75F62A1096923C1A892AEDEC8649F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		27097AF7D9F196EDDC5FAA5D4DF4E65D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9761EE8108F0D5AA5289AC9902365C33 /* PhoneNumberKit.xcconfig */;
+			baseConfigurationReference = F09F91134838E16D1D9A3910D540A7D9 /* PhoneNumberKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -732,9 +1375,90 @@
 			};
 			name = Release;
 		};
+		3416A09A2DBC4104A5437148EEC06C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OAStackView/OAStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OAStackView/OAStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OAStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48231957691E46B4697342E285631D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C1677E51B19A2B19A32C3354DEB2DD /* Cartography.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4A130267879CE4A4F0E8AF33FF668F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Malert";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Malert/ResourceBundle-Malert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Malert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		4E15751FD74D2A5383BDF2A0EB1EC0B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9761EE8108F0D5AA5289AC9902365C33 /* PhoneNumberKit.xcconfig */;
+			baseConfigurationReference = F09F91134838E16D1D9A3910D540A7D9 /* PhoneNumberKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -758,6 +1482,38 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		53F541859F580C83C77DE1555D181375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OAStackView/OAStackView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAStackView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OAStackView/OAStackView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OAStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -875,9 +1631,41 @@
 			};
 			name = Debug;
 		};
+		86190FC49A39E3C1075AA33D28D8A5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Malert/Malert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Malert/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Malert/Malert.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Malert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		8B057773120D53DBB692700549D84EAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E717E2F0A2630B6C3426FDAB0304EAF /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 9B70CB6ECB9C3ADA3958FAD7CEB07C54 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -909,7 +1697,7 @@
 		};
 		A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E717E2F0A2630B6C3426FDAB0304EAF /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 9B70CB6ECB9C3ADA3958FAD7CEB07C54 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -940,9 +1728,26 @@
 			};
 			name = Debug;
 		};
-		B87F04A3731AB3766BE0DDE244E91B3E /* Debug */ = {
+		B390C467EED78A3BF205DB9C29033DB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78BA1938DD07CBBDCBCEAB8122196FF6 /* Pods-Restaurant Solution.debug.xcconfig */;
+			baseConfigurationReference = 7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OAStackView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/OAStackView/ResourceBundle-OAStackView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OAStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C1677E51B19A2B19A32C3354DEB2DD /* Cartography.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -955,21 +1760,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Restaurant Solution/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Restaurant_Solution;
+				PRODUCT_NAME = Cartography;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1046,6 +1848,77 @@
 			};
 			name = Debug;
 		};
+		DA2EC9CE28C6ACC375C3EF87437F91E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BA1938DD07CBBDCBCEAB8122196FF6 /* Pods-Restaurant Solution.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Restaurant Solution/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Restaurant_Solution;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDEA96A811BA618B5580E7F9C3107065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465281DABB33A5B60C25FB3E8FC37426 /* Pods-Restaurant Solution.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Restaurant Solution/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Restaurant_Solution;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1090,40 +1963,72 @@
 			};
 			name = Debug;
 		};
-		F5951EB4A3C0DD0BF1E13C31A73AD2B2 /* Release */ = {
+		E9E9233B4365B3FFEBBCD15C1703266B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 465281DABB33A5B60C25FB3E8FC37426 /* Pods-Restaurant Solution.release.xcconfig */;
+			baseConfigurationReference = BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Malert";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Malert/ResourceBundle-Malert-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Malert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F1532EA6DDA5A441C88978EB7129AC76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF30AE831566DF88B13316F61D4529A7 /* Malert.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Restaurant Solution/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Malert/Malert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Malert/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Restaurant_Solution;
+				MODULEMAP_FILE = "Target Support Files/Malert/Malert.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Malert;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		FA1CCA049305B6A8E625CB52B77B9F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF6E59C9179603F7D50ECAFBCF59698 /* OAStackView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OAStackView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/OAStackView/ResourceBundle-OAStackView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = OAStackView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1137,11 +2042,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E6C201A559ADFB3B07FAE32A23C8AAC /* Build configuration list for PBXNativeTarget "Pods-Restaurant Solution" */ = {
+		0F310DF5F92658F920023261A006177B /* Build configuration list for PBXNativeTarget "OAStackView-OAStackView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B87F04A3731AB3766BE0DDE244E91B3E /* Debug */,
-				F5951EB4A3C0DD0BF1E13C31A73AD2B2 /* Release */,
+				FA1CCA049305B6A8E625CB52B77B9F0C /* Debug */,
+				B390C467EED78A3BF205DB9C29033DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C414D3A0963FD474E8D07456D52D77C /* Build configuration list for PBXNativeTarget "Pods-Restaurant Solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2EC9CE28C6ACC375C3EF87437F91E5 /* Debug */,
+				DDEA96A811BA618B5580E7F9C3107065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1155,6 +2069,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2F969D6915DEEC43A1D44378BC712384 /* Build configuration list for PBXNativeTarget "Malert-Malert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A130267879CE4A4F0E8AF33FF668F36 /* Debug */,
+				E9E9233B4365B3FFEBBCD15C1703266B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F4E77E187323925C213C1CC2B08B8EE /* Build configuration list for PBXNativeTarget "PhoneNumberKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1164,11 +2087,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4640A3FD22DAF78390468CA450BB29DA /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE4FC17A531C9E7C2D0AADD856CBDB1 /* Debug */,
+				48231957691E46B4697342E285631D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57EBEE7253A016BAFFBE5EE2AA2AB11A /* Build configuration list for PBXNativeTarget "Malert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1532EA6DDA5A441C88978EB7129AC76 /* Debug */,
+				86190FC49A39E3C1075AA33D28D8A5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		75B8C8837854098D8D911F8A3335DDAC /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */,
 				8B057773120D53DBB692700549D84EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C73D25A13854CE5F822D9BE1D3FFA1BC /* Build configuration list for PBXNativeTarget "OAStackView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F541859F580C83C77DE1555D181375 /* Debug */,
+				3416A09A2DBC4104A5437148EEC06C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

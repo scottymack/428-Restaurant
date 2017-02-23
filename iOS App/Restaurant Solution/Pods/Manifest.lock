@@ -1,5 +1,10 @@
 PODS:
+  - Cartography (1.0.1)
   - IQKeyboardManagerSwift (4.0.8)
+  - Malert (0.2.1):
+    - Cartography (~> 1.0)
+    - OAStackView (~> 1.0)
+  - OAStackView (1.0.1)
   - PhoneNumberKit (1.2.2):
     - PhoneNumberKit/PhoneNumberKitCore (= 1.2.2)
     - PhoneNumberKit/UIKit (= 1.2.2)
@@ -9,12 +14,16 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - Malert
   - PhoneNumberKit (~> 1.2)
 
 SPEC CHECKSUMS:
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  Malert: 921c4b4c5c0f6a39c1e2dce14344fb8e33547e05
+  OAStackView: 95e7cb79cbea25c2342f496a44bdbe8bd4c8d510
   PhoneNumberKit: ffae8f18fb78c1425c7af973711b0b0fd4f4104f
 
-PODFILE CHECKSUM: 04b34a160a65c30d43a35deb8b5a42dd54bb361e
+PODFILE CHECKSUM: 2796e4dc17e260a93b06d745cfc0e05e6815987e
 
 COCOAPODS: 1.2.0

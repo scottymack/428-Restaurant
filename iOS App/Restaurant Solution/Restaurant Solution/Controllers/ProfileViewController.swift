@@ -8,8 +8,9 @@
 
 import UIKit
 import PhoneNumberKit
+import Malert
 
-class ProfileViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class ProfileViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     let mainUser = User.sharedInstance
@@ -23,16 +24,60 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var myNavBar: UINavigationItem!
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    let picker = UIImagePickerController()
 
+    @IBAction func photoFromLibrary(_ sender: UIBarButtonItem) {
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        picker.modalPresentationStyle = .popover
+        present(picker, animated: true, completion: nil)
+        picker.popoverPresentationController?.barButtonItem = sender
+    }
+
+    @IBAction func shootPhoto(_ sender: UIBarButtonItem) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera)
+        {
+            picker.allowsEditing = false
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            picker.cameraCaptureMode = .photo
+            picker.modalPresentationStyle = .fullScreen
+            present(picker,animated: true,completion: nil)
+        }
+        else
+        {
+            noCamera()
+        }
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "Sorry, this device has no camera",
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        present(
+            alertVC,
+            animated: true,
+            completion: nil)
+    }
     
     var pickOption = ["Male", "Female"]
     let phoneNumberKit = PhoneNumberKit()
+    
     
     override func viewDidLoad()
     {
         print("viewDidLoad")
         super.viewDidLoad()
     
+        picker.delegate = self
+        
         //Make a round image for the profile picture
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
         self.profileImage.clipsToBounds = true;
@@ -75,6 +120,22 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         self.birthday.inputAccessoryView = toolbar
         self.gender.inputAccessoryView = toolbar
         
+        
+        //Create Buttons
+        let button1 = MalertButtonStruct(title: "title1") {
+            //Do something when click at button
+        }
+        
+        //Create Buttons
+        let button2 = MalertButtonStruct(title: "title2") {
+            //Do something when click at button
+        }
+        
+        //Create Malert with title, custom view, buttons and animation type
+        //Create Malert with custom view, buttons and animation type
+//        MalertManager.shared.show(customView: test.instantiateFromNib(),
+//                                  buttons: [button1, button2],
+//                                  animationType: .modalLeft)
     }
     
     func goBack() {
@@ -121,10 +182,8 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         textField.inputView = datePicker
         
         let genderPickerView = UIPickerView()
-        
         gender.inputView = genderPickerView
         datePicker.addTarget(self, action: #selector(datePickerChanged(sender:)), for: .valueChanged)
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -202,6 +261,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     
+    //*** MAKE SURE THIS IS GARBAGE AND REMOVE ***
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         print("Got It!")
         if textField == phoneNumber {
@@ -256,4 +316,18 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     }
     */
 
+    //MARK: - Delegates
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+        profileImage.contentMode = .scaleAspectFit //3
+        profileImage.image = chosenImage //4
+        dismiss(animated:true, completion: nil) //5
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

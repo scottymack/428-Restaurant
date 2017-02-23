@@ -8,6 +8,8 @@ target 'Restaurant Solution' do
     pod 'IQKeyboardManagerSwift'
     source 'https://github.com/CocoaPods/Specs.git'
     pod 'PhoneNumberKit', '~> 1.2'
+    pod 'IQKeyboardManagerSwift'
+    pod "Malert"
 
   target 'Restaurant SolutionTests' do
     inherit! :search_paths
