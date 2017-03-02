@@ -159,7 +159,6 @@
 				83B3A7CE1E37A22000BFDFC6 /* Assets.xcassets */,
 				83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */,
 				83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */,
-				83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */,
 				83B3A7D01E37A22000BFDFC6 /* LaunchScreen.storyboard */,
 				83B3A7D31E37A22000BFDFC6 /* Info.plist */,
 			);
@@ -190,6 +189,7 @@
 				83B3A7C91E37A22000BFDFC6 /* test.swift */,
 				83D945141E3DC504007E81E9 /* RestaurantTableViewController.swift */,
 				83B2D0391E61551800266A4B /* MenuCollectionViewController.swift */,
+				83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */,
 				83B2D03B1E6155C600266A4B /* MenuItemCollectionViewCell.swift */,
 				2CA929991E579AC000587691 /* ProfileViewController.swift */,
 			);
