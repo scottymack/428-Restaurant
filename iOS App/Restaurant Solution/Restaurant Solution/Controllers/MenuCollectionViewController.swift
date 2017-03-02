@@ -69,15 +69,15 @@ class MenuCollectionViewController: UICollectionViewController {
 
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MenuItemCollectionViewCell
-		let mi = menu[indexPath.row]
-		print(mi.toString())
-		print(mi.description)
+		let menuItem = menu[indexPath.row]
+		print(menuItem.toString())
+		print(menuItem.description)
 		print(indexPath.row)
 
 		print(cell.menuItemDescription)
-		cell.name.text = mi.name
-		cell.menuItemDescription.text = mi.description
-		cell.price.text = mi.price
+		cell.name.text = menuItem.name
+		cell.menuItemDescription.text = menuItem.description
+		cell.price.text = menuItem.price
 
 		return cell
 	}
