@@ -74,6 +74,8 @@ class ServerCommunicator {
 		var request = URLRequest(url: url)
 
 		request.httpMethod = "POST"
+		request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+		request.addValue("application/json", forHTTPHeaderField: "Accept")
 
 		do {
 			let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
@@ -91,7 +93,7 @@ class ServerCommunicator {
 				return
 			}
 
-			if let expected = options["expected"] as? String, let data = data {
+			if let expected = options["expect"] as? String, let data = data {
 				if expected == "json" {
 					do {
 						let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : Any]
