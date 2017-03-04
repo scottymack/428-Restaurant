@@ -54,11 +54,11 @@ class ServerCommunicator {
 	 * route, indicating the endpoint, (not including the service url)
 	 * data, whos value is a dictionary [String : Any] representing the
 	 * data to send to the server
-	 * expected(optional), whos value tells the data type to expect from server.
+	 * expect(optional), whos value tells the data type to expect from server.
 	 * currently only 'json' is accepted.
-	 * if expected == 'json', a dictionary of [String : Any] will be passed to the closure
-	 * if expected has any other value, a Data object will be passed to the closure
-	 * if expected is omitted, the closure will not be called.
+	 * if expect == 'json', a dictionary of [String : Any] will be passed to the closure
+	 * if expect has any other value, a Data object will be passed to the closure
+	 * if expect is omitted, the closure will not be called.
 	 */
 	static func POST(options: [String : Any], closure: @escaping (Any) -> Void) {
 
