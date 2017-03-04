@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C6533E11E57D4E20081D620 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6533E01E57D4E20081D620 /* PhoneNumberKit.framework */; };
+		2C31E5481E5FDA8700FE9EDB /* ProfileSourcePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */; };
+		2C31E54C1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31E54B1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift */; };
+		2C31E54E1E5FE09900FE9EDB /* Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E54D1E5FE09900FE9EDB /* Library.png */; };
+		2C31E5501E5FE14600FE9EDB /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E54F1E5FE14600FE9EDB /* Camera.png */; };
 		2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA929991E579AC000587691 /* ProfileViewController.swift */; };
 		2CA9299E1E57A14500587691 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9299D1E57A14500587691 /* profile.png */; };
 		2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDD0DD1E4E4A6200460C2E /* User.swift */; };
@@ -44,8 +47,11 @@
 
 /* Begin PBXFileReference section */
 		28447633B2952CE70B6A1AB6 /* Pods-Restaurant Solution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Solution.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.debug.xcconfig"; sourceTree = "<group>"; };
+		2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileSourcePickerView.xib; path = ../ProfileSourcePickerView.xib; sourceTree = "<group>"; };
+		2C31E54B1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileSourcePickerView.swift; path = Controllers/ProfileSourcePickerView.swift; sourceTree = "<group>"; };
+		2C31E54D1E5FE09900FE9EDB /* Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Library.png; path = ../../../../../../../Downloads/Library.png; sourceTree = "<group>"; };
+		2C31E54F1E5FE14600FE9EDB /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
 		2C6533DB1E57D03D0081D620 /* Restaurant Solution-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurant Solution-Bridging-Header.h"; sourceTree = "<group>"; };
-		2C6533E01E57D4E20081D620 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneNumberKit.framework; path = Carthage/Build/iOS/PhoneNumberKit.framework; sourceTree = "<group>"; };
 		2CA929991E579AC000587691 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		2CA9299D1E57A14500587691 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		2CCDD0DD1E4E4A6200460C2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
@@ -79,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6533E11E57D4E20081D620 /* PhoneNumberKit.framework in Frameworks */,
 				5CF475A5A47F6EC48C5BE87F /* Pods_Restaurant_Solution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,7 +124,6 @@
 		2C6533DF1E57D4E20081D620 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C6533E01E57D4E20081D620 /* PhoneNumberKit.framework */,
 				99FBF4CBD5DBD3FC108944A8 /* Pods_Restaurant_Solution.framework */,
 				CF112DD527D9D23D66B7C5C3 /* Pods_Restaurant_SolutionTests.framework */,
 				FD14B290A8DA123D70C0EEB8 /* Pods_Restaurant_SolutionUITests.framework */,
@@ -139,6 +143,8 @@
 		2CA9299C1E57A0B100587691 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2C31E54F1E5FE14600FE9EDB /* Camera.png */,
+				2C31E54D1E5FE09900FE9EDB /* Library.png */,
 				2CA9299D1E57A14500587691 /* profile.png */,
 			);
 			name = Images;
@@ -176,6 +182,7 @@
 				83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */,
 				83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */,
 				83B3A7D01E37A22000BFDFC6 /* LaunchScreen.storyboard */,
+				2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */,
 				83B3A7D31E37A22000BFDFC6 /* Info.plist */,
 			);
 			path = "Restaurant Solution";
@@ -205,6 +212,7 @@
 				83B3A7C91E37A22000BFDFC6 /* test.swift */,
 				83D945141E3DC504007E81E9 /* RestaurantTableViewController.swift */,
 				2CA929991E579AC000587691 /* ProfileViewController.swift */,
+				2C31E54B1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -339,9 +347,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B3A7D21E37A22000BFDFC6 /* LaunchScreen.storyboard in Resources */,
+				2C31E54E1E5FE09900FE9EDB /* Library.png in Resources */,
 				2CA9299E1E57A14500587691 /* profile.png in Resources */,
+				2C31E5501E5FE14600FE9EDB /* Camera.png in Resources */,
 				83B3A7CF1E37A22000BFDFC6 /* Assets.xcassets in Resources */,
 				83B3A7CD1E37A22000BFDFC6 /* Main.storyboard in Resources */,
+				2C31E5481E5FDA8700FE9EDB /* ProfileSourcePickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */,
+				2C31E54C1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift in Sources */,
 				83D945181E3DCAE0007E81E9 /* Restaurant.swift in Sources */,
 				2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */,
 				83B3A7CA1E37A22000BFDFC6 /* test.swift in Sources */,

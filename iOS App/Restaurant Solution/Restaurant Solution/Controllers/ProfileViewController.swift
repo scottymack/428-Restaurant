@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PhoneNumberKit
 import Malert
 
 class ProfileViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate {
@@ -33,10 +32,32 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         picker.modalPresentationStyle = .popover
         present(picker, animated: true, completion: nil)
-        picker.popoverPresentationController?.barButtonItem = sender
+    }
+    
+    func photoFromLibrary() {
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        picker.modalPresentationStyle = .popover
+        present(picker, animated: true, completion: nil)
     }
 
     @IBAction func shootPhoto(_ sender: UIBarButtonItem) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera)
+        {
+            picker.allowsEditing = false
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            picker.cameraCaptureMode = .photo
+            picker.modalPresentationStyle = .fullScreen
+            present(picker,animated: true,completion: nil)
+        }
+        else
+        {
+            noCamera()
+        }
+    }
+    
+    func shootPhoto() {
         if UIImagePickerController.isSourceTypeAvailable(.camera)
         {
             picker.allowsEditing = false
@@ -68,7 +89,6 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     var pickOption = ["Male", "Female"]
-    let phoneNumberKit = PhoneNumberKit()
     
     
     override func viewDidLoad()
@@ -77,6 +97,13 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         super.viewDidLoad()
     
         picker.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ProfileViewController.imageTapped(gesture:)))
+        
+        // add it to the image view;
+        profileImage.addGestureRecognizer(tapGesture)
+        // make sure imageView can be interacted with by user
+        profileImage.isUserInteractionEnabled = true
         
         //Make a round image for the profile picture
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2;
@@ -120,22 +147,6 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         self.birthday.inputAccessoryView = toolbar
         self.gender.inputAccessoryView = toolbar
         
-        
-        //Create Buttons
-        let button1 = MalertButtonStruct(title: "title1") {
-            //Do something when click at button
-        }
-        
-        //Create Buttons
-        let button2 = MalertButtonStruct(title: "title2") {
-            //Do something when click at button
-        }
-        
-        //Create Malert with title, custom view, buttons and animation type
-        //Create Malert with custom view, buttons and animation type
-//        MalertManager.shared.show(customView: test.instantiateFromNib(),
-//                                  buttons: [button1, button2],
-//                                  animationType: .modalLeft)
     }
     
     func goBack() {
@@ -328,6 +339,39 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func imageTapped(gesture: UIGestureRecognizer) {
+        // if the tapped view is a UIImageView then set it to imageview
+        if (gesture.view as? UIImageView) != nil {
+            print("Image Tapped")
+            //Create Buttons
+            let button1 = MalertButtonStruct(title: "Camera") {
+                //Do something when click at button
+                MalertManager.shared.dismiss()
+                self.shootPhoto()
+                
+            }
+            
+            //Create Buttons
+            let button2 = MalertButtonStruct(title: "Library") {
+                //Do something when click at button
+                MalertManager.shared.dismiss()
+                self.photoFromLibrary()
+            }
+            
+            let button3 = MalertButtonStruct(title: "Cancel") {
+                //Do something when click at button
+                MalertManager.shared.dismiss()
+            }
+            
+            //Create Malert with title, custom view, buttons and animation type
+            //Create Malert with custom view, buttons and animation type
+            MalertManager.shared.show(customView: ProfileSourcePickerView.instantiateFromNib(),
+                                      buttons: [button1, button2, button3],
+                                      animationType: .modalLeft)
+            
+        }
     }
     
 }
