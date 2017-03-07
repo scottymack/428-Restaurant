@@ -10,11 +10,13 @@
 		2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA929991E579AC000587691 /* ProfileViewController.swift */; };
 		2CA9299E1E57A14500587691 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9299D1E57A14500587691 /* profile.png */; };
 		2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDD0DD1E4E4A6200460C2E /* User.swift */; };
+		8352A6C81E67DCA400E2BE13 /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */; };
+		8352A6CB1E6B5CD900E2BE13 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6CA1E6B5CD900E2BE13 /* Menu.swift */; };
+		8352A6CE1E6B609D00E2BE13 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6CD1E6B609D00E2BE13 /* MenuCategory.swift */; };
 		83B2D03A1E61551800266A4B /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2D0391E61551800266A4B /* MenuCollectionViewController.swift */; };
 		83B2D03C1E6155C600266A4B /* MenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2D03B1E6155C600266A4B /* MenuItemCollectionViewCell.swift */; };
 		83B2D0401E61575B00266A4B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2D03F1E61575B00266A4B /* MenuItem.swift */; };
 		83B2D0421E6157AF00266A4B /* MenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */; };
-		8352A6C81E67DCA400E2BE13 /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */; };
 		83B3A7C81E37A22000BFDFC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */; };
 		83B3A7CD1E37A22000BFDFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */; };
 		83B3A7CF1E37A22000BFDFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B3A7CE1E37A22000BFDFC6 /* Assets.xcassets */; };
@@ -49,11 +51,13 @@
 		2CA9299D1E57A14500587691 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		2CCDD0DD1E4E4A6200460C2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		6AF914556DBEC83A7FD514BF /* Pods-Restaurant Solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Solution.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.release.xcconfig"; sourceTree = "<group>"; };
+		8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerCommunicator.swift; path = Utilities/ServerCommunicator.swift; sourceTree = "<group>"; };
+		8352A6CA1E6B5CD900E2BE13 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = Model/Menu/Menu.swift; sourceTree = "<group>"; };
+		8352A6CD1E6B609D00E2BE13 /* MenuCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCategory.swift; path = Model/Menu/MenuCategory.swift; sourceTree = "<group>"; };
 		83B2D0391E61551800266A4B /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCollectionViewController.swift; path = Controllers/MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		83B2D03B1E6155C600266A4B /* MenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemCollectionViewCell.swift; path = Controllers/MenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		83B2D03F1E61575B00266A4B /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Model/MenuItem.swift; sourceTree = "<group>"; };
 		83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemViewController.swift; path = Controllers/MenuItemViewController.swift; sourceTree = "<group>"; };
-		8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerCommunicator.swift; path = Utilities/ServerCommunicator.swift; sourceTree = "<group>"; };
 		83B3A7C41E37A22000BFDFC6 /* Restaurant Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B3A7CC1E37A22000BFDFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +141,26 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		8352A6C91E6B5CA200E2BE13 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				83B2D0391E61551800266A4B /* MenuCollectionViewController.swift */,
+				83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */,
+				83B2D03B1E6155C600266A4B /* MenuItemCollectionViewCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		8352A6CC1E6B5CE000E2BE13 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				83B2D03F1E61575B00266A4B /* MenuItem.swift */,
+				8352A6CA1E6B5CD900E2BE13 /* Menu.swift */,
+				8352A6CD1E6B609D00E2BE13 /* MenuCategory.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		83B3A7BB1E37A21F00BFDFC6 = {
 			isa = PBXGroup;
 			children = (
@@ -195,10 +219,8 @@
 		83D945131E3DC023007E81E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8352A6C91E6B5CA200E2BE13 /* Menu */,
 				83D945141E3DC504007E81E9 /* RestaurantTableViewController.swift */,
-				83B2D0391E61551800266A4B /* MenuCollectionViewController.swift */,
-				83B2D0411E6157AF00266A4B /* MenuItemViewController.swift */,
-				83B2D03B1E6155C600266A4B /* MenuItemCollectionViewCell.swift */,
 				2CA929991E579AC000587691 /* ProfileViewController.swift */,
 			);
 			name = Controllers;
@@ -209,7 +231,7 @@
 			children = (
 				83D945171E3DCAE0007E81E9 /* Restaurant.swift */,
 				2CCDD0DD1E4E4A6200460C2E /* User.swift */,
-				83B2D03F1E61575B00266A4B /* MenuItem.swift */,
+				8352A6CC1E6B5CE000E2BE13 /* Menu */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -503,13 +525,13 @@
 				2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */,
 				83D945181E3DCAE0007E81E9 /* Restaurant.swift in Sources */,
 				2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */,
-				83B3A7CA1E37A22000BFDFC6 /* test.swift in Sources */,
 				83B2D03C1E6155C600266A4B /* MenuItemCollectionViewCell.swift in Sources */,
+				8352A6CE1E6B609D00E2BE13 /* MenuCategory.swift in Sources */,
 				83B3A7C81E37A22000BFDFC6 /* AppDelegate.swift in Sources */,
+				8352A6CB1E6B5CD900E2BE13 /* Menu.swift in Sources */,
 				83B2D0421E6157AF00266A4B /* MenuItemViewController.swift in Sources */,
 				83B2D0401E61575B00266A4B /* MenuItem.swift in Sources */,
 				83B2D03A1E61551800266A4B /* MenuCollectionViewController.swift in Sources */,
-				83B3A7C81E37A22000BFDFC6 /* AppDelegate.swift in Sources */,
 				8352A6C81E67DCA400E2BE13 /* ServerCommunicator.swift in Sources */,
 				83D945151E3DC504007E81E9 /* RestaurantTableViewController.swift in Sources */,
 			);

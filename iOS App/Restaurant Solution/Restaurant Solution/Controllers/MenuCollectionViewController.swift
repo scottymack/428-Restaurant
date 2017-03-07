@@ -12,9 +12,8 @@ private let reuseIdentifier = "MenuItemCell"
 
 class MenuCollectionViewController: UICollectionViewController {
 
-	let jsonMenu = "{\"menu\":{\"id\":1,\"name\":\"quisquam\",\"description\":\"Laborum debitis quis ea et non.\",\"price\":\"16.29\",\"restaurant_id\":\"1\",\"created_at\":\"2017-02-04 07:07:46\",\"updated_at\":\"2017-02-04 07:07:46\"}}"
-
-	var menu = [MenuItem]()
+	var menu: Menu?
+	var currentCategory: MenuCategory?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -34,12 +33,16 @@ class MenuCollectionViewController: UICollectionViewController {
 	}
 
 	func setMenu() {
-		let json = try! JSONSerialization.jsonObject(with: jsonMenu.data(using: .utf8)!, options: []) as! [String : Any]
+		ServerCommunicator.GET(route: "/restaurants/menus/2") { data in
+			guard let restaurant = data["restaurant"] as! [String : Any]?, let menuCategories = restaurant["menu_categories"] as! [[String : Any]]? else {
+				print("no restaurant or menu")
+				return
+			}
 
-		print(json)
+			self.menu = Menu(json: menuCategories)
+			self.currentCategory = MenuCategory(json: menuCategories[0]) // Maybe get this from the menu?
 
-		json.keys.forEach { item in
-			menu.append(MenuItem(json: json[item] as! [String : Any]))
+			self.collectionView?.reloadData()
 		}
 	}
 
@@ -51,7 +54,7 @@ class MenuCollectionViewController: UICollectionViewController {
 		if let nextScene = segue.destination as? MenuItemViewController {
 			let cell = sender as! MenuItemCollectionViewCell
 			let indexPath = self.collectionView?.indexPath(for: cell)
-			let selectedMenuItem = menu[(indexPath?.row)!]
+			let selectedMenuItem = currentCategory?.contents[(indexPath?.row)!]
 			nextScene.menuItem = selectedMenuItem
 		}
 	}
@@ -64,12 +67,22 @@ class MenuCollectionViewController: UICollectionViewController {
 
 
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return menu.count
+		if let category = currentCategory {
+			return category.contents.count
+		} else {
+			return 0
+		}
 	}
 
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MenuItemCollectionViewCell
-		let menuItem = menu[indexPath.row]
+
+		guard let category = currentCategory else {
+			print("how did you select something when it's not there...")
+			return cell
+		}
+
+		let menuItem = category.contents[indexPath.row]
 		print(menuItem.toString())
 		print(menuItem.description)
 		print(indexPath.row)
