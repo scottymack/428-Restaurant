@@ -16,11 +16,7 @@ class RestaurantTableViewController: UITableViewController {
 		print("viewDidLoad")
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+		getRestaurants()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,20 +33,35 @@ class RestaurantTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
 		print("numOfRows")
-        return 0
+        return restaurants.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+	func getRestaurants() {
+		ServerCommunicator.GET(route: "/restaurants") { data in
+			guard let serverRestaurants = data["restaurants"] as! [[String : Any]]? else {
+				print("no restaurants")
+				return
+			}
 
-        // Configure the cell...
+			serverRestaurants.forEach { restaurant in
+				self.restaurants.append(Restaurant(json: restaurant))
+			}
+
+			self.tableView.reloadData()
+		}
+	}
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RestaurantCell", for: indexPath) as! RestaurantTableViewCell
+
+        let restaurant = restaurants[indexPath.row]
+		cell.name.text = restaurant.name
+		cell.address.text = restaurant.address
+//		cell.restaurantImage = restaurant.image
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,14 +98,18 @@ class RestaurantTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+		if let nextScene = segue.destination as? RestaurantViewController {
+			let cell = sender as! RestaurantTableViewCell
+			let indexPath = self.tableView.indexPath(for: cell)
+			let selectedRestaurant = restaurants[(indexPath?.row)!]
+			print("my restaurant")
+			print(selectedRestaurant)
+			nextScene.restaurant = selectedRestaurant
+		}
     }
-    */
 
 }

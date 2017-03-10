@@ -7,15 +7,30 @@
 //
 
 import Foundation
+import UIKit
 
 class Restaurant {
 
-	init(name: String, menu: String) {
-		// implement initializer
-	}
+	var name: String
+	var address: String
+	var image: UIImage?
+
+	var menu: Menu?
+
+//	init(name: String, menu: String) {
+//		// implement initializer
+//	}
 
 	init(json: [String: Any]) {
-		// implement initializer
+		print(json)
+		name = json["name"] as! String
+		address = json["city"] as! String + ", " + (json["state"] as! String)
+
+		if let jsonMenu = json["menu"] as? [[String : Any]] {
+			menu = Menu(json: jsonMenu)
+		} else {
+			print("not adding menu")
+		}
 	}
 
 }
