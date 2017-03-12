@@ -22,4 +22,11 @@ class MenuItem {
 	func toString() -> String {
 		return name + " " + String(price) + " " + description
 	}
+
+	static func == (left: MenuItem, right: MenuItem) -> Bool {
+		return (left.name == right.name) && (left.price == right.price) && (left.description == right.description)
+	}
+	static func != (left: MenuItem, right: MenuItem) -> Bool {
+		return !(left == right)
+	}
 }

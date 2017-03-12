@@ -9,7 +9,7 @@
 import Foundation
 
 class Menu {
-	let categories = [MenuCategory]()
+	var categories = [MenuCategory]()
 
 	init(json: [[String : Any]]) {
 
