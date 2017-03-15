@@ -24,7 +24,11 @@ class ServerCommunicator {
 			return
 		}
 
-		let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+		var request = URLRequest(url: url)
+
+		request.addValue("Bearer Vdh8aANvao56A4YG9wmBWqiUSFGOfxXhk9OppeNI5saF3xWHWF4sdZvOgVsQ", forHTTPHeaderField: "Authorization")
+
+		let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 			DispatchQueue.main.async(execute: {
 				guard error == nil else {
 					print(error!)
