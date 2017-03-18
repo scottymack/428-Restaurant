@@ -205,7 +205,7 @@
         <scene sceneID="Jo0-J7-PEX">
             <objects>
                 <collectionViewController id="4m4-d2-QMV" customClass="MenuItemsCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ggf-KN-MWA">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ggf-KN-MWA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -304,17 +304,17 @@
                                         <rect key="frame" x="0.0" y="251" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <items>
-                                            <barButtonItem width="299" systemItem="fixedSpace" id="dyF-gJ-HB6"/>
-                                            <barButtonItem title="Order" id="H3N-gh-8dZ"/>
+                                            <barButtonItem title="price" style="plain" id="avV-9f-MpK">
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </barButtonItem>
+                                            <barButtonItem width="252" systemItem="fixedSpace" id="dyF-gJ-HB6"/>
+                                            <barButtonItem title="Order" id="H3N-gh-8dZ">
+                                                <connections>
+                                                    <action selector="orderItem:" destination="FOc-mM-9VC" id="oQF-IL-7nN"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </items>
                                     </toolbar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLs-ON-zXR">
-                                        <rect key="frame" x="16" y="263" width="156" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lCf-tg-bHP" firstAttribute="centerX" secondItem="aIa-bV-d93" secondAttribute="centerX" id="CFB-kl-7x6"/>
@@ -351,7 +351,7 @@
                     <connections>
                         <outlet property="itemDescription" destination="lCf-tg-bHP" id="3Km-cJ-nTY"/>
                         <outlet property="name" destination="SAg-1G-4Eq" id="Jsb-v6-4s9"/>
-                        <outlet property="price" destination="CLs-ON-zXR" id="omn-z5-MNh"/>
+                        <outlet property="price" destination="avV-9f-MpK" id="LQA-zB-ggS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAC-h6-GtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -479,7 +479,7 @@
         <scene sceneID="vzh-dK-ovj">
             <objects>
                 <collectionViewController id="2VF-FE-cLT" customClass="CategoriesCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jjh-wF-f08">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jjh-wF-f08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

@@ -10,10 +10,13 @@ import Foundation
 
 class Order {
 
-	static var items = [MenuItem]()
-	static var price = { () -> Double in 
+	static var instance = Order()
+
+	var items = [MenuItem]()
+
+	var price: Double {
 		var sum = 0.0
-		Order.items.forEach { menuItem in
+		items.forEach { menuItem in
 			if let itemPrice = Double(menuItem.price) {
 				sum += itemPrice
 			}
@@ -21,11 +24,13 @@ class Order {
 		return sum
 	}
 
-	static func add(menuItem: MenuItem) {
+	private init() {}
+
+	func add(menuItem: MenuItem) {
 		items.append(menuItem)
 	}
 
-	static func remove(menuItem: MenuItem) {
+	func remove(menuItem: MenuItem) {
 		for (index, currItem) in items.enumerated() {
 			if currItem == menuItem {
 				items.remove(at: index)
