@@ -11,6 +11,8 @@ import Foundation
 class ServerCommunicator {
 	static let serverapiURL = "http://yodipity.com/api"
 
+	static let authToken = "Vdh8aANvao56A4YG9wmBWqiUSFGOfxXhk9OppeNI5saF3xWHWF4sdZvOgVsQ"
+
 	enum ServerCommunicatorError: Error {
 		case invalidURLFromEndpoint
 		case noDataFromServer
@@ -26,7 +28,7 @@ class ServerCommunicator {
 
 		var request = URLRequest(url: url)
 
-		request.addValue("Bearer Vdh8aANvao56A4YG9wmBWqiUSFGOfxXhk9OppeNI5saF3xWHWF4sdZvOgVsQ", forHTTPHeaderField: "Authorization")
+		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
 
 		let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 			DispatchQueue.main.async(execute: {
@@ -54,7 +56,7 @@ class ServerCommunicator {
 	}
 
 	/**
-	 * options should contain at least two keys, with one more optional:
+	 * options should contain two mandatory keys, and one optional key:
 	 * route, indicating the endpoint, (not including the service url)
 	 * data, whos value is a dictionary [String : Any] representing the
 	 * data to send to the server
@@ -71,13 +73,14 @@ class ServerCommunicator {
 			return
 		}
 		guard let data = options["data"] as? [String : Any] else {
-			print("no data to send")
+			print("no json data to send")
 			return
 		}
 
 		var request = URLRequest(url: url)
 
 		request.httpMethod = "POST"
+		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
 		request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 		request.addValue("application/json", forHTTPHeaderField: "Accept")
 
@@ -103,7 +106,70 @@ class ServerCommunicator {
 						let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : Any]
 						closure(json)
 					} catch {
-						print("error in JSONSerialization")
+						print("error in JSONSerialization from server")
+						return
+					}
+				} else {
+					closure(data)
+				}
+			}
+		}
+
+		task.resume()
+	}
+
+	/**
+	* options should contain two mandatory keys, and one optional key:
+	* route, indicating the endpoint, (not including the service url)
+	* data, whos value is a dictionary [String : Any] representing the
+	* data to send to the server
+	* expect(optional), whos value tells the data type to expect from server.
+	* currently only 'json' is accepted.
+	* if expect == 'json', a dictionary of [String : Any] will be passed to the closure
+	* if expect has any other value, a Data object will be passed to the closure
+	* if expect is omitted, the closure will not be called.
+	*/
+	static func PUT(options: [String : Any], closure: @escaping (Any) -> Void) {
+
+		guard let url = URL(string: serverapiURL + (options["route"] as! String)) else {
+			print("cannot create URL from given route")
+			return
+		}
+		guard let data = options["data"] as? [String : Any] else {
+			print("no json data to send")
+			return
+		}
+
+		var request = URLRequest(url: url)
+
+		request.httpMethod = "PUT"
+		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
+		request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+		request.addValue("application/json", forHTTPHeaderField: "Accept")
+
+		do {
+			let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
+
+			request.httpBody = jsonData
+		} catch {
+			print("error in JSONSerialization")
+			return
+		}
+
+		let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+
+			guard error == nil else {
+				print(error!)
+				return
+			}
+
+			if let expected = options["expect"] as? String, let data = data {
+				if expected == "json" {
+					do {
+						let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : Any]
+						closure(json)
+					} catch {
+						print("error in JSONSerialization from server")
 						return
 					}
 				} else {
