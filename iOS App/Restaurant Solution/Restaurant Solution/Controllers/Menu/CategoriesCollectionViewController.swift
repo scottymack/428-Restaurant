@@ -12,6 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class CategoriesCollectionViewController: UICollectionViewController {
 
+	var restaurant: Restaurant?
 	var menu: Menu?
 
     override func viewDidLoad() {

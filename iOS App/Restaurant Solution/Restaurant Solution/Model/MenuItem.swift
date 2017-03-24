@@ -9,9 +9,9 @@
 import Foundation
 
 class MenuItem {
-	var name: String
-	var price: String
-	var description: String
+	let name: String
+	let price: String
+	let description: String
 
 	init(json: [String : Any]) {
 		name = json["name"] as! String

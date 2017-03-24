@@ -11,9 +11,11 @@
 		2CA9299E1E57A14500587691 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9299D1E57A14500587691 /* profile.png */; };
 		2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCDD0DD1E4E4A6200460C2E /* User.swift */; };
 		832DA1431E726EF200220A47 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832DA1421E726EF200220A47 /* Order.swift */; };
+		833BB1691E84C107002DC4BF /* AboutRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833BB1681E84C107002DC4BF /* AboutRestaurantViewController.swift */; };
 		8352A6C81E67DCA400E2BE13 /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */; };
 		8352A6CB1E6B5CD900E2BE13 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6CA1E6B5CD900E2BE13 /* Menu.swift */; };
 		8352A6CE1E6B609D00E2BE13 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352A6CD1E6B609D00E2BE13 /* MenuCategory.swift */; };
+		838944B71E82394E0033F8DE /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838944B61E82394E0033F8DE /* RestaurantViewController.swift */; };
 		838AEB101E74CC7C00D54A4E /* CategoriesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AEB0F1E74CC7C00D54A4E /* CategoriesCollectionViewController.swift */; };
 		838AEB121E74D21500D54A4E /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AEB111E74D21500D54A4E /* CategoryCollectionViewCell.swift */; };
 		83B2D03A1E61551800266A4B /* MenuItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2D0391E61551800266A4B /* MenuItemsCollectionViewController.swift */; };
@@ -55,9 +57,11 @@
 		2CCDD0DD1E4E4A6200460C2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		6AF914556DBEC83A7FD514BF /* Pods-Restaurant Solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Solution.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.release.xcconfig"; sourceTree = "<group>"; };
 		832DA1421E726EF200220A47 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		833BB1681E84C107002DC4BF /* AboutRestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutRestaurantViewController.swift; path = Controllers/AboutRestaurantViewController.swift; sourceTree = "<group>"; };
 		8352A6C71E67DCA400E2BE13 /* ServerCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerCommunicator.swift; path = Utilities/ServerCommunicator.swift; sourceTree = "<group>"; };
 		8352A6CA1E6B5CD900E2BE13 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = Model/Menu/Menu.swift; sourceTree = "<group>"; };
 		8352A6CD1E6B609D00E2BE13 /* MenuCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCategory.swift; path = Model/Menu/MenuCategory.swift; sourceTree = "<group>"; };
+		838944B61E82394E0033F8DE /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantViewController.swift; path = Controllers/RestaurantViewController.swift; sourceTree = "<group>"; };
 		838AEB0F1E74CC7C00D54A4E /* CategoriesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesCollectionViewController.swift; path = Controllers/Menu/CategoriesCollectionViewController.swift; sourceTree = "<group>"; };
 		838AEB111E74D21500D54A4E /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryCollectionViewCell.swift; path = Controllers/Menu/CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		83B2D0391E61551800266A4B /* MenuItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItemsCollectionViewController.swift; path = Controllers/Menu/MenuItemsCollectionViewController.swift; sourceTree = "<group>"; };
@@ -229,7 +233,9 @@
 			children = (
 				8352A6C91E6B5CA200E2BE13 /* Menu */,
 				83D945141E3DC504007E81E9 /* RestaurantTableViewController.swift */,
+				838944B61E82394E0033F8DE /* RestaurantViewController.swift */,
 				2CA929991E579AC000587691 /* ProfileViewController.swift */,
+				833BB1681E84C107002DC4BF /* AboutRestaurantViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -532,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */,
+				838944B71E82394E0033F8DE /* RestaurantViewController.swift in Sources */,
 				838AEB121E74D21500D54A4E /* CategoryCollectionViewCell.swift in Sources */,
 				83D945181E3DCAE0007E81E9 /* Restaurant.swift in Sources */,
 				2CCDD0DE1E4E4A6200460C2E /* User.swift in Sources */,
@@ -545,6 +552,7 @@
 				83B2D03A1E61551800266A4B /* MenuItemsCollectionViewController.swift in Sources */,
 				832DA1431E726EF200220A47 /* Order.swift in Sources */,
 				8352A6C81E67DCA400E2BE13 /* ServerCommunicator.swift in Sources */,
+				833BB1691E84C107002DC4BF /* AboutRestaurantViewController.swift in Sources */,
 				83D945151E3DC504007E81E9 /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

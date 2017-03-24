@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="1204" y="140"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant View Controller-->
         <scene sceneID="xIf-QY-LLr">
             <objects>
-                <viewController id="PQL-7F-RY4" sceneMemberID="viewController">
+                <viewController id="PQL-7F-RY4" customClass="RestaurantViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J0A-1V-jJv"/>
                         <viewControllerLayoutGuide type="bottom" id="2cG-yp-5k5"/>
@@ -186,26 +186,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Single Restaurant View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weP-LX-R2u">
-                                <rect key="frame" x="99" y="76" width="176" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-ci-1A3">
+                                <rect key="frame" x="0.0" y="365" width="375" height="74.5"/>
+                                <state key="normal" title="Menu"/>
+                                <connections>
+                                    <segue destination="2VF-FE-cLT" kind="show" identifier="toMenu" id="eRV-wW-5BU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1T-Jl-B3J">
+                                <rect key="frame" x="0.0" y="440" width="375" height="74.5"/>
+                                <state key="normal" title="Message Server"/>
+                                <connections>
+                                    <segue destination="XaO-cR-5Xf" kind="show" id="IIA-U0-ZoS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-RE-1kP">
+                                <rect key="frame" x="0.0" y="515.5" width="375" height="75"/>
+                                <state key="normal" title="Pay Bill"/>
+                                <connections>
+                                    <segue destination="FKk-35-UZg" kind="show" id="zeU-Y6-XvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxd-TC-hau">
+                                <rect key="frame" x="0.0" y="592.5" width="375" height="74.5"/>
+                                <state key="normal" title="About Restaurant"/>
+                                <connections>
+                                    <segue destination="yUg-ue-KHb" kind="show" identifier="aboutRestaurant" id="Mzn-Vg-GaE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zuc-xn-F7U">
+                                <rect key="frame" x="0.0" y="64" width="375" height="301"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="25f-RE-1kP" firstAttribute="leading" secondItem="ofm-xZ-jdV" secondAttribute="leading" id="3BT-PN-7ir"/>
+                            <constraint firstAttribute="bottom" secondItem="yxd-TC-hau" secondAttribute="bottom" id="4Tu-ki-ipG"/>
+                            <constraint firstAttribute="trailing" secondItem="hy0-ci-1A3" secondAttribute="trailing" id="66V-r9-ceu"/>
+                            <constraint firstItem="yxd-TC-hau" firstAttribute="top" secondItem="25f-RE-1kP" secondAttribute="bottom" constant="2" id="8K5-3E-p6Y"/>
+                            <constraint firstItem="hy0-ci-1A3" firstAttribute="top" secondItem="Zuc-xn-F7U" secondAttribute="bottom" id="Bc7-Q1-mBG"/>
+                            <constraint firstItem="O1T-Jl-B3J" firstAttribute="leading" secondItem="ofm-xZ-jdV" secondAttribute="leading" id="CXB-Fq-K8n"/>
+                            <constraint firstAttribute="trailing" secondItem="yxd-TC-hau" secondAttribute="trailing" id="D51-gD-Ayh"/>
+                            <constraint firstAttribute="trailing" secondItem="O1T-Jl-B3J" secondAttribute="trailing" id="Fqk-yP-KI8"/>
+                            <constraint firstItem="yxd-TC-hau" firstAttribute="leading" secondItem="ofm-xZ-jdV" secondAttribute="leading" id="Ppf-xz-2wD"/>
+                            <constraint firstItem="hy0-ci-1A3" firstAttribute="top" secondItem="J0A-1V-jJv" secondAttribute="bottom" constant="301" id="Zsv-KX-r87"/>
+                            <constraint firstItem="25f-RE-1kP" firstAttribute="top" secondItem="O1T-Jl-B3J" secondAttribute="bottom" constant="1" id="aZi-1l-AQE"/>
+                            <constraint firstAttribute="trailing" secondItem="25f-RE-1kP" secondAttribute="trailing" id="cjG-nj-0Cj"/>
+                            <constraint firstItem="25f-RE-1kP" firstAttribute="height" secondItem="hy0-ci-1A3" secondAttribute="height" id="d7O-1e-tc4"/>
+                            <constraint firstItem="O1T-Jl-B3J" firstAttribute="top" secondItem="Zuc-xn-F7U" secondAttribute="bottom" constant="75" id="dSl-Bb-Fw0"/>
+                            <constraint firstItem="O1T-Jl-B3J" firstAttribute="height" secondItem="hy0-ci-1A3" secondAttribute="height" id="fD0-zH-D7j"/>
+                            <constraint firstItem="yxd-TC-hau" firstAttribute="height" secondItem="hy0-ci-1A3" secondAttribute="height" id="iHl-jO-4cI"/>
+                            <constraint firstItem="Zuc-xn-F7U" firstAttribute="leading" secondItem="ofm-xZ-jdV" secondAttribute="leading" id="iJv-yW-xsm"/>
+                            <constraint firstItem="hy0-ci-1A3" firstAttribute="leading" secondItem="ofm-xZ-jdV" secondAttribute="leading" id="j2q-pY-xt3"/>
+                            <constraint firstAttribute="trailing" secondItem="Zuc-xn-F7U" secondAttribute="trailing" id="qAv-15-ch5"/>
+                            <constraint firstItem="Zuc-xn-F7U" firstAttribute="top" secondItem="J0A-1V-jJv" secondAttribute="bottom" id="zOR-of-JZ2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1F5-aQ-gKx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTD-c1-72L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="137"/>
+            <point key="canvasLocation" x="2077.5999999999999" y="136.28185907046478"/>
         </scene>
         <!--Menu Items Collection View Controller-->
         <scene sceneID="Jo0-J7-PEX">
             <objects>
                 <collectionViewController id="4m4-d2-QMV" customClass="MenuItemsCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ggf-KN-MWA">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ggf-KN-MWA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -358,10 +406,10 @@
             </objects>
             <point key="canvasLocation" x="5296.8000000000002" y="-1045.7271364317842"/>
         </scene>
-        <!--View Controller-->
+        <!--About Restaurant View Controller-->
         <scene sceneID="FiL-S8-9jl">
             <objects>
-                <viewController id="yUg-ue-KHb" sceneMemberID="viewController">
+                <viewController id="yUg-ue-KHb" customClass="AboutRestaurantViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ctu-HT-Hhf"/>
                         <viewControllerLayoutGuide type="bottom" id="wUz-xR-SAq"/>
@@ -370,20 +418,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Restaurant Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-cl-CPc">
-                                <rect key="frame" x="99" y="149" width="177" height="21"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xj5-ar-b7K">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Restaurant Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-cl-CPc">
+                                        <rect key="frame" x="99" y="381" width="177" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-mc-cwZ">
+                                        <rect key="frame" x="0.0" y="-64" width="375" height="332"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rx-2h-baQ">
+                                        <rect key="frame" x="121" y="276" width="133" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUv-uU-Pc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4148" y="894.60269865067471"/>
+            <point key="canvasLocation" x="3208.8000000000002" y="894.60269865067471"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bXX-aC-Tmh">
@@ -437,14 +502,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMG-a8-bwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6029.6000000000004" y="-335.08245877061472"/>
+            <point key="canvasLocation" x="4662" y="243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fMo-SY-dhY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YOe-VS-Wof" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3fo-5N-djw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3fo-5N-djw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -462,7 +527,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QMf-Nh-NF4" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gwo-Z6-jsI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gwo-Z6-jsI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -479,7 +544,7 @@
         <scene sceneID="vzh-dK-ovj">
             <objects>
                 <collectionViewController id="2VF-FE-cLT" customClass="CategoriesCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jjh-wF-f08">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="jjh-wF-f08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -529,18 +594,18 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="idZ-zs-lZO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pkx-TG-52m">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pkx-TG-52m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2VF-FE-cLT" kind="relationship" relationship="rootViewController" id="FzQ-hA-uVh"/>
+                        <segue destination="PQL-7F-RY4" kind="relationship" relationship="rootViewController" id="8Rw-XY-twf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CkD-Tn-pPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573.5999999999999" y="-591.45427286356824"/>
+            <point key="canvasLocation" x="1463" y="-622"/>
         </scene>
     </scenes>
     <resources>
