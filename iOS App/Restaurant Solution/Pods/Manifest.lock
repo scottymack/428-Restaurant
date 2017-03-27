@@ -6,15 +6,18 @@ PODS:
   - PhoneNumberKit/PhoneNumberKitCore (1.2.2)
   - PhoneNumberKit/UIKit (1.2.2):
     - PhoneNumberKit/PhoneNumberKitCore
+  - Stripe (10.0.1)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
   - PhoneNumberKit (~> 1.2)
+  - Stripe
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   PhoneNumberKit: ffae8f18fb78c1425c7af973711b0b0fd4f4104f
+  Stripe: dd6df0e2c6a8463e2f1ca9b15dc246e5ae1eee64
 
-PODFILE CHECKSUM: 04b34a160a65c30d43a35deb8b5a42dd54bb361e
+PODFILE CHECKSUM: 5438680000ed166721512b8959ce276871041562
 
 COCOAPODS: 1.2.0
