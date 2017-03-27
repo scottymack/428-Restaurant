@@ -19,6 +19,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
 
+		 self.window = UIWindow(frame: UIScreen.main.bounds)
+
+		if true /*User.isLoggedIn()*/ {
+			//display the normal storyboad
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			let navigationController: UINavigationController = storyboard.instantiateViewController(withIdentifier: "restaurantListNavigationController") as! UINavigationController
+			let viewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "rtvc") as UIViewController
+			navigationController.viewControllers = [viewController]
+			self.window?.rootViewController!.present(viewController, animated: true, completion: nil)
+
+
+			//	print(1)
+			//let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			//print(2)
+			//let initialView = storyboard.instantiateViewController(withIdentifier: "restaurantListNavigationController")
+			//self.window?.rootViewController!.present(initialView, animated:true, completion:nil)
+		} else {
+			//go to login page
+			let storyboard = UIStoryboard(name: "Login", bundle: nil)
+			let initialView = storyboard.instantiateViewController(withIdentifier: "loginViewController")
+			self.window?.rootViewController!.present(initialView, animated: true, completion: nil)
+		}
+
+		self.window?.makeKeyAndVisible()
+
 		return true
 	}
 

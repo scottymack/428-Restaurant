@@ -12,7 +12,7 @@ import PhoneNumberKit
 class ProfileViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
-    let mainUser = User.sharedInstance
+    let mainUser = User.getSharedInstance()
     
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var phoneNumber: UITextField!

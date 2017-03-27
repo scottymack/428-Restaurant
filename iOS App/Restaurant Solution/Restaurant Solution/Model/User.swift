@@ -15,10 +15,8 @@ import UIKit
 class User
 {
     
-    static let sharedInstance: User = {
-        let instance = User()
-        return instance }()
-    
+	private static let sharedInstance: User? = nil
+
     // TODO: Fill this with data from the sign up process
 //    var profilePicture:UIImage = UIImage(named: "")!
     var firstName = "First"
@@ -28,4 +26,18 @@ class User
     var birthday = "01/01/1992"
     var phoneNumber = "(801) 123 4567"
     var gender = "Something"
+
+	private init() {}
+
+	static func isLoggedIn() -> Bool {
+		if sharedInstance == nil {
+			return false
+		} else {
+			return true
+		}
+	}
+
+	static func getSharedInstance() -> User {
+		return sharedInstance!
+	}
 }
