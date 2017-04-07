@@ -11,33 +11,76 @@
 
 import Foundation
 import UIKit
+import KeychainSwift
 
 class User
 {
+	static let tokenKeychainKey = "inHouseTokenKey"
+	static let passwordKeychainKey = "userPasswordKey"
+	static let emailUserDefaultsKey = "userEmailKey"
     
-	private static let sharedInstance: User? = nil
+	static let sharedInstance = User()
 
-    // TODO: Fill this with data from the sign up process
 //    var profilePicture:UIImage = UIImage(named: "")!
-    var firstName = "First"
-    var lastName = "Last"
-    var email = "example@example.com"
-    var username = ""
-    var birthday = "01/01/1992"
-    var phoneNumber = "(801) 123 4567"
-    var gender = "Something"
+	var firstName: String?
+    var lastName: String?
+    var email: String?
+    var username: String?
+    var birthday: String?
+    var phoneNumber: String?
+    var gender: String?
+	var apiToken: String?
+	var serverID: Int?
 
-	private init() {}
+	let keychain = KeychainSwift()
 
-	static func isLoggedIn() -> Bool {
-		if sharedInstance == nil {
-			return false
-		} else {
-			return true
-		}
+	private init() {
+		firstName = "First"
+		lastName = "Last"
+		email = "example@example.com"
+		username = ""
+		birthday = "01/01/1992"
+		phoneNumber = "(801) 123 4567"
+		gender = "Something"
 	}
 
-	static func getSharedInstance() -> User {
-		return sharedInstance!
+	func storeUserInfo(user: [String: Any]) {
+		apiToken = user["api_token"] as? String
+		email = user["email"] as? String
+		serverID = user["id"] as? Int
+		username = user["name"] as? String
+	}
+
+	func store(token: String) {
+		keychain.set(token, forKey: User.tokenKeychainKey)
+	}
+
+	func store(password: String) {
+		keychain.set(password, forKey: User.passwordKeychainKey)
+	}
+
+	func store(email: String) {
+		UserDefaults.standard.set(email, forKey: User.emailUserDefaultsKey)
+
+	}
+
+	func logout() {
+		keychain.delete(User.tokenKeychainKey)
+		keychain.delete(User.passwordKeychainKey)
+		UserDefaults.standard.removeObject(forKey: User.emailUserDefaultsKey)
+	}
+
+	func isLoggedIn() -> Bool {
+		if let keychainToken = keychain.get(User.tokenKeychainKey),
+			let defaultsEmail = UserDefaults.standard.value(forKey: User.emailUserDefaultsKey) as? String,
+			let password = keychain.get(User.passwordKeychainKey) {
+			apiToken = keychainToken
+			email = defaultsEmail
+			// TODO: use password to get all User info, maybe asynchronously
+			return true
+		} else {
+			print("user not logged in")
+			return false
+		}
 	}
 }

@@ -10,8 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+	@IBOutlet weak var emailInput: UITextField!
+	@IBOutlet weak var passwordInput: UITextField!
+	@IBOutlet weak var loginButton: UIButton!
+
+	var usernameInput: UITextField?
+
+
     override func viewDidLoad() {
-		print("yay not logged in")
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -21,7 +27,74 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+	@IBAction func login() {
+		let email = emailInput.text!
+		let password = passwordInput.text!
+
+		ServerCommunicator.POST(options: ["route": "/login", "data": ["email": email, "password": password], "expect": "json"]) { data in
+			if let data = data as? [String: Any] {
+				if data["result"] as! String == "success" {
+					print("logged in")
+					User.sharedInstance.store(password: password)
+					User.sharedInstance.store(token: data["token"] as! String)
+					User.sharedInstance.store(email: email)
+
+					self.openRestaurantsPage()
+				} else {
+					print("failed login")
+				}
+			}
+		}
+	}
+
+	@IBAction func signUp() {
+		if let usernameInput = usernameInput {
+			if !validateInputs() {
+				print("invalid inputs")
+				return
+			}
+			ServerCommunicator.POST(options: ["route": "/users", "data": ["name": usernameInput.text, "email": emailInput.text, "password": passwordInput.text], "expect": "json"]) { data in
+				if let data = data as? [String: Any],
+				let user = data["user"] as? [String: Any],
+				let apiToken = user["api_token"] as? String {
+					User.sharedInstance.storeUserInfo(user: user)
+
+					User.sharedInstance.store(token: apiToken)
+					User.sharedInstance.store(password: self.passwordInput.text!)
+					User.sharedInstance.store(email: self.emailInput.text!)
+					self.openRestaurantsPage()
+				} else {
+					print("failed sign up")
+					print(data)
+				}
+			}
+		} else {
+			// switch to signup view
+			loginButton.removeFromSuperview()
+			usernameInput = UITextField(frame: emailInput.frame)
+			usernameInput?.placeholder = "Username"
+			usernameInput?.borderStyle = emailInput.borderStyle
+			let spaceDiff = passwordInput.frame.origin.y - emailInput.frame.origin.y
+			usernameInput?.frame.origin.y = passwordInput.frame.origin.y + spaceDiff
+
+			view.addSubview(usernameInput!)
+		}
+
+	}
+
+	func validateInputs() -> Bool {
+		return true
+	}
+
+	func openRestaurantsPage() {
+		DispatchQueue.main.async {
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			let navigationController = storyboard.instantiateViewController(withIdentifier: "restaurantListNavigationController") as! UINavigationController
+			UIApplication.shared.keyWindow?.rootViewController = navigationController
+		}
+	}
+
 
     /*
     // MARK: - Navigation

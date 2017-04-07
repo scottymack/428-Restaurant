@@ -1,5 +1,6 @@
 PODS:
   - IQKeyboardManagerSwift (4.0.8)
+  - KeychainSwift (7.0.0)
   - PhoneNumberKit (1.2.2):
     - PhoneNumberKit/PhoneNumberKitCore (= 1.2.2)
     - PhoneNumberKit/UIKit (= 1.2.2)
@@ -9,12 +10,14 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - KeychainSwift (~> 7.0)
   - PhoneNumberKit (~> 1.2)
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
   PhoneNumberKit: ffae8f18fb78c1425c7af973711b0b0fd4f4104f
 
-PODFILE CHECKSUM: 04b34a160a65c30d43a35deb8b5a42dd54bb361e
+PODFILE CHECKSUM: 93dde31eb89da2886411e6f62a971b88a9e5828a
 
 COCOAPODS: 1.2.0

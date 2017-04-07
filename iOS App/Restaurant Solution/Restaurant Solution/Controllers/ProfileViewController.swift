@@ -9,10 +9,11 @@
 import UIKit
 import PhoneNumberKit
 
+
 class ProfileViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
-    let mainUser = User.getSharedInstance()
+    let mainUser = User.sharedInstance
     
     @IBOutlet weak var fullName: UILabel!
     @IBOutlet weak var phoneNumber: UITextField!
@@ -40,7 +41,7 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         
         //Set the info based on the logged in user
 //        self.profileImage.image = mainUser.profilePicture
-        self.fullName.text = mainUser.firstName + " " + mainUser.lastName
+        self.fullName.text = mainUser.firstName! + " " + mainUser.lastName!
         self.phoneNumber.text = mainUser.phoneNumber
         self.emailAddress.text = mainUser.email
         self.birthday.text = mainUser.birthday
