@@ -17,33 +17,14 @@ class CategoriesCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-		setMenu()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-	func setMenu() {
-		ServerCommunicator.GET(route: "/restaurants/menus/2") { data in
-			guard let restaurant = data["restaurant"] as! [String : Any]?, let menuCategories = restaurant["menu_categories"] as! [[String : Any]]? else {
-				print("no restaurant or menu")
-				return
-			}
-
-			self.menu = Menu(json: menuCategories)
-			self.collectionView?.reloadData()
-		}
-	}
-
 
     // MARK: - Navigation
 

@@ -11,7 +11,7 @@ import Foundation
 class MenuCategory {
 	public let name: String
 	let id: Int
-	public let contents = [MenuItem]()
+	public var contents = [MenuItem]()
 
 	init (json: [String : Any]) {
 		name = json["name"] as! String
