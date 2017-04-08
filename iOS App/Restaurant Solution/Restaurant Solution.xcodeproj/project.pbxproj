@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C31E5481E5FDA8700FE9EDB /* ProfileSourcePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */; };
 		2C31E54C1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31E54B1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift */; };
-		2C31E54E1E5FE09900FE9EDB /* Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E54D1E5FE09900FE9EDB /* Library.png */; };
 		2C31E5501E5FE14600FE9EDB /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C31E54F1E5FE14600FE9EDB /* Camera.png */; };
 		2CA9299A1E579AC000587691 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA929991E579AC000587691 /* ProfileViewController.swift */; };
 		2CA9299E1E57A14500587691 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA9299D1E57A14500587691 /* profile.png */; };
@@ -18,13 +17,14 @@
 		6717C8C4581E55BFBE9C2A87 /* Pods_Restaurant_SolutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF112DD527D9D23D66B7C5C3 /* Pods_Restaurant_SolutionTests.framework */; };
 		83B3A7C81E37A22000BFDFC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */; };
 		83B3A7CA1E37A22000BFDFC6 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3A7C91E37A22000BFDFC6 /* test.swift */; };
-		83B3A7CD1E37A22000BFDFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */; };
 		83B3A7CF1E37A22000BFDFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B3A7CE1E37A22000BFDFC6 /* Assets.xcassets */; };
 		83B3A7D21E37A22000BFDFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B3A7D01E37A22000BFDFC6 /* LaunchScreen.storyboard */; };
 		83B3A7DD1E37A22000BFDFC6 /* Restaurant_SolutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3A7DC1E37A22000BFDFC6 /* Restaurant_SolutionTests.swift */; };
 		83B3A7E81E37A22000BFDFC6 /* Restaurant_SolutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3A7E71E37A22000BFDFC6 /* Restaurant_SolutionUITests.swift */; };
 		83D945151E3DC504007E81E9 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D945141E3DC504007E81E9 /* RestaurantTableViewController.swift */; };
 		83D945181E3DCAE0007E81E9 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D945171E3DCAE0007E81E9 /* Restaurant.swift */; };
+		9FFAB4EA1E996A2C0095E94D /* Library.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAB4E91E996A2C0095E94D /* Library.png */; };
+		9FFAB4ED1E996C210095E94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAB4EB1E996C210095E94D /* Main.storyboard */; };
 		F11D84F58FAAB47C17F010DD /* Pods_Restaurant_SolutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14B290A8DA123D70C0EEB8 /* Pods_Restaurant_SolutionUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +49,8 @@
 		28447633B2952CE70B6A1AB6 /* Pods-Restaurant Solution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant Solution.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant Solution/Pods-Restaurant Solution.debug.xcconfig"; sourceTree = "<group>"; };
 		2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileSourcePickerView.xib; path = ../ProfileSourcePickerView.xib; sourceTree = "<group>"; };
 		2C31E54B1E5FDE5700FE9EDB /* ProfileSourcePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileSourcePickerView.swift; path = Controllers/ProfileSourcePickerView.swift; sourceTree = "<group>"; };
-		2C31E54D1E5FE09900FE9EDB /* Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Library.png; path = ../../../../../../../Downloads/Library.png; sourceTree = "<group>"; };
 		2C31E54F1E5FE14600FE9EDB /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
-		2C6533DB1E57D03D0081D620 /* Restaurant Solution-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurant Solution-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C6533DB1E57D03D0081D620 /* Restaurant Solution-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Restaurant Solution-Bridging-Header.h"; sourceTree = "<group>"; };
 		2CA929991E579AC000587691 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		2CA9299D1E57A14500587691 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		2CCDD0DD1E4E4A6200460C2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		83B3A7C41E37A22000BFDFC6 /* Restaurant Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B3A7C91E37A22000BFDFC6 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
-		83B3A7CC1E37A22000BFDFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83B3A7CE1E37A22000BFDFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83B3A7D11E37A22000BFDFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83B3A7D31E37A22000BFDFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +72,8 @@
 		8EFA6C6DBB5D935DFE7A8163 /* Pods-Restaurant SolutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant SolutionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant SolutionTests/Pods-Restaurant SolutionTests.release.xcconfig"; sourceTree = "<group>"; };
 		99FBF4CBD5DBD3FC108944A8 /* Pods_Restaurant_Solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_Solution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2A432283E3C09E28186B19 /* Pods-Restaurant SolutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant SolutionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant SolutionUITests/Pods-Restaurant SolutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FFAB4E91E996A2C0095E94D /* Library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Library.png; path = ../../../../../Downloads/Library.png; sourceTree = "<group>"; };
+		9FFAB4EC1E996C210095E94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Desktop/428-Restaurant-Updated/iOS App/Restaurant Solution/Restaurant Solution/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		BE33603D83F0CDFC020CB5FB /* Pods-Restaurant SolutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant SolutionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant SolutionTests/Pods-Restaurant SolutionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF112DD527D9D23D66B7C5C3 /* Pods_Restaurant_SolutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Restaurant_SolutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E49FE02B74FD78684F25E6 /* Pods-Restaurant SolutionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Restaurant SolutionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Restaurant SolutionUITests/Pods-Restaurant SolutionUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		2CA9299C1E57A0B100587691 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAB4E91E996A2C0095E94D /* Library.png */,
 				2C31E54F1E5FE14600FE9EDB /* Camera.png */,
-				2C31E54D1E5FE09900FE9EDB /* Library.png */,
 				2CA9299D1E57A14500587691 /* profile.png */,
 			);
 			name = Images;
@@ -180,7 +180,7 @@
 				83D945131E3DC023007E81E9 /* Controllers */,
 				83B3A7CE1E37A22000BFDFC6 /* Assets.xcassets */,
 				83B3A7C71E37A22000BFDFC6 /* AppDelegate.swift */,
-				83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */,
+				9FFAB4EB1E996C210095E94D /* Main.storyboard */,
 				83B3A7D01E37A22000BFDFC6 /* LaunchScreen.storyboard */,
 				2C31E5471E5FDA8700FE9EDB /* ProfileSourcePickerView.xib */,
 				83B3A7D31E37A22000BFDFC6 /* Info.plist */,
@@ -346,12 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFAB4ED1E996C210095E94D /* Main.storyboard in Resources */,
 				83B3A7D21E37A22000BFDFC6 /* LaunchScreen.storyboard in Resources */,
-				2C31E54E1E5FE09900FE9EDB /* Library.png in Resources */,
 				2CA9299E1E57A14500587691 /* profile.png in Resources */,
+				9FFAB4EA1E996A2C0095E94D /* Library.png in Resources */,
 				2C31E5501E5FE14600FE9EDB /* Camera.png in Resources */,
 				83B3A7CF1E37A22000BFDFC6 /* Assets.xcassets in Resources */,
-				83B3A7CD1E37A22000BFDFC6 /* Main.storyboard in Resources */,
 				2C31E5481E5FDA8700FE9EDB /* ProfileSourcePickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,20 +557,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83B3A7CB1E37A22000BFDFC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83B3A7CC1E37A22000BFDFC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83B3A7D01E37A22000BFDFC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				83B3A7D11E37A22000BFDFC6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9FFAB4EB1E996C210095E94D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FFAB4EC1E996C210095E94D /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
