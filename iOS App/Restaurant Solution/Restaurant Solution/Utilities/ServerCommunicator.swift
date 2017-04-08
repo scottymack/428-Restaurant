@@ -11,7 +11,7 @@ import Foundation
 class ServerCommunicator {
 	static let serverapiURL = "http://yodipity.com/api"
 
-	static let authToken = "Vdh8aANvao56A4YG9wmBWqiUSFGOfxXhk9OppeNI5saF3xWHWF4sdZvOgVsQ"
+	static let authToken = "OniBZtLbVRbkbT65j7RKMBQOxyt2ndU0MixCTYes58t5JAbNfe495gOxgfM6"
 
 	enum ServerCommunicatorError: Error {
 		case invalidURLFromEndpoint
