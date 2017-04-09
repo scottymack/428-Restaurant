@@ -12,10 +12,14 @@ private let reuseIdentifier = "MenuItemCell"
 
 class MenuItemsCollectionViewController: UICollectionViewController {
 
+	@IBOutlet weak var categoryNavItem: UINavigationItem!
+
 	var category: MenuCategory?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		categoryNavItem.title = category?.name
 
 		// Uncomment the following line to preserve selection between presentations
 		// self.clearsSelectionOnViewWillAppear = false

@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="2119.1999999999998" y="894.60269865067471"/>
         </scene>
-        <!--Restaurant Table View Controller-->
+        <!--Restaurants-->
         <scene sceneID="TZu-8J-62r">
             <objects>
                 <tableViewController storyboardIdentifier="rtvc" id="rBA-7m-gem" customClass="RestaurantTableViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
@@ -174,13 +174,13 @@
                             <outlet property="delegate" destination="rBA-7m-gem" id="bth-OH-Gc2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="sba-9p-FnG"/>
+                    <navigationItem key="navigationItem" title="Restaurants" id="sba-9p-FnG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sc-6C-LL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1204" y="139.880059970015"/>
         </scene>
-        <!--Restaurant View Controller-->
+        <!--Restaurant Name-->
         <scene sceneID="xIf-QY-LLr">
             <objects>
                 <viewController id="PQL-7F-RY4" customClass="RestaurantViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
@@ -241,16 +241,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Restaurant Name" id="0Fd-D3-SbF"/>
                     <connections>
                         <outlet property="imageText" destination="weP-LX-R2u" id="z7C-Cq-gcM"/>
                         <outlet property="restaurantName" destination="lOz-F6-vZm" id="MsM-hE-e65"/>
+                        <outlet property="restaurantNavItem" destination="0Fd-D3-SbF" id="VHm-uw-7YE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTD-c1-72L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2077.5999999999999" y="136.28185907046478"/>
         </scene>
-        <!--Menu Items Collection View Controller-->
+        <!--Category Name-->
         <scene sceneID="Jo0-J7-PEX">
             <objects>
                 <collectionViewController id="4m4-d2-QMV" customClass="MenuItemsCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
@@ -315,7 +317,10 @@
                             <outlet property="delegate" destination="4m4-d2-QMV" id="Ecw-x3-OFV"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="wxY-Ju-zcL"/>
+                    <navigationItem key="navigationItem" title="Category Name" id="wxY-Ju-zcL"/>
+                    <connections>
+                        <outlet property="categoryNavItem" destination="wxY-Ju-zcL" id="FkP-hO-MyT"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhu-tc-Bls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -524,7 +529,7 @@
             </objects>
             <point key="canvasLocation" x="1180" y="894.60269865067471"/>
         </scene>
-        <!--Categories Collection View Controller-->
+        <!--Categories-->
         <scene sceneID="vzh-dK-ovj">
             <objects>
                 <collectionViewController id="2VF-FE-cLT" customClass="CategoriesCollectionViewController" customModule="Restaurant_Solution" customModuleProvider="target" sceneMemberID="viewController">
@@ -567,7 +572,7 @@
                             <outlet property="delegate" destination="2VF-FE-cLT" id="53I-dc-9bf"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="qRU-wp-UB5"/>
+                    <navigationItem key="navigationItem" title="Categories" id="ogn-UQ-o3I"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5z-hO-qJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -35,10 +35,8 @@ class LoginViewController: UIViewController {
 		ServerCommunicator.POST(options: ["route": "/login", "data": ["email": email, "password": password], "expect": "json"]) { data in
 			if let data = data as? [String: Any] {
 				if data["result"] as! String == "success" {
-					print("logged in")
-					User.sharedInstance.store(password: password)
-					User.sharedInstance.store(token: data["token"] as! String)
-					User.sharedInstance.store(email: email)
+
+					User.sharedInstance.storeUserInfo(username: nil, email: email, token: data["token"] as? String, id: nil, password: password)
 
 					self.openRestaurantsPage()
 				} else {
@@ -58,11 +56,8 @@ class LoginViewController: UIViewController {
 				if let data = data as? [String: Any],
 				let user = data["user"] as? [String: Any],
 				let apiToken = user["api_token"] as? String {
-					User.sharedInstance.storeUserInfo(user: user)
+					User.sharedInstance.storeUserInfo(username: user["name"] as? String, email: user["email"] as? String, token: apiToken, id: user["id"] as? Int, password: self.passwordInput.text)
 
-					User.sharedInstance.store(token: apiToken)
-					User.sharedInstance.store(password: self.passwordInput.text!)
-					User.sharedInstance.store(email: self.emailInput.text!)
 					self.openRestaurantsPage()
 				} else {
 					print("failed sign up")

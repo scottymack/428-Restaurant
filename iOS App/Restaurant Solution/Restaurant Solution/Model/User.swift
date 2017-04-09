@@ -21,6 +21,17 @@ class User
     
 	static let sharedInstance = User()
 
+	static var token: String {
+		if let token = sharedInstance.apiToken {
+			print("returning \(token)")
+			return token
+		} else {
+			// probably go to login screen?
+			print("no auth")
+			return "no auth token"
+		}
+	}
+
 //    var profilePicture:UIImage = UIImage(named: "")!
 	var firstName: String?
     var lastName: String?
@@ -44,22 +55,39 @@ class User
 		gender = "Something"
 	}
 
-	func storeUserInfo(user: [String: Any]) {
-		apiToken = user["api_token"] as? String
-		email = user["email"] as? String
-		serverID = user["id"] as? Int
-		username = user["name"] as? String
+	func storeUserInfo(username: String?, email: String?, token: String?, id: Int?, password: String?) {
+		if let username = username {
+			self.username = username
+		}
+
+		if let email = email {
+			self.email = email
+			store(email: email)
+		}
+
+		if let token = token {
+			self.apiToken = token
+			store(token: token)
+		}
+
+		if let id = id {
+			self.serverID = id
+		}
+
+		if let password = password {
+			store(password: password)
+		}
 	}
 
-	func store(token: String) {
+	private func store(token: String) {
 		keychain.set(token, forKey: User.tokenKeychainKey)
 	}
 
-	func store(password: String) {
+	private func store(password: String) {
 		keychain.set(password, forKey: User.passwordKeychainKey)
 	}
 
-	func store(email: String) {
+	private func store(email: String) {
 		UserDefaults.standard.set(email, forKey: User.emailUserDefaultsKey)
 
 	}
@@ -73,7 +101,7 @@ class User
 	func isLoggedIn() -> Bool {
 		if let keychainToken = keychain.get(User.tokenKeychainKey),
 			let defaultsEmail = UserDefaults.standard.value(forKey: User.emailUserDefaultsKey) as? String,
-			let password = keychain.get(User.passwordKeychainKey) {
+			let _ = keychain.get(User.passwordKeychainKey) {
 			apiToken = keychainToken
 			email = defaultsEmail
 			// TODO: use password to get all User info, maybe asynchronously

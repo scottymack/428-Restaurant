@@ -11,7 +11,7 @@ import Foundation
 class ServerCommunicator {
 	static let serverapiURL = "http://yodipity.com/api"
 
-	static let authToken = "OniBZtLbVRbkbT65j7RKMBQOxyt2ndU0MixCTYes58t5JAbNfe495gOxgfM6"
+	//static let authToken = "OniBZtLbVRbkbT65j7RKMBQOxyt2ndU0MixCTYes58t5JAbNfe495gOxgfM6"
 
 	enum ServerCommunicatorError: Error {
 		case invalidURLFromEndpoint
@@ -28,7 +28,7 @@ class ServerCommunicator {
 
 		var request = URLRequest(url: url)
 
-		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
+		request.addValue("Bearer \(User.token)", forHTTPHeaderField: "Authorization")
 
 		let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 			DispatchQueue.main.async(execute: {
@@ -80,7 +80,7 @@ class ServerCommunicator {
 		var request = URLRequest(url: url)
 
 		request.httpMethod = "POST"
-		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
+		request.addValue("Bearer \(User.token)", forHTTPHeaderField: "Authorization")
 		request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 		request.addValue("application/json", forHTTPHeaderField: "Accept")
 
@@ -143,7 +143,7 @@ class ServerCommunicator {
 		var request = URLRequest(url: url)
 
 		request.httpMethod = "PUT"
-		request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
+		request.addValue("Bearer \(User.token)", forHTTPHeaderField: "Authorization")
 		request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 		request.addValue("application/json", forHTTPHeaderField: "Accept")
 

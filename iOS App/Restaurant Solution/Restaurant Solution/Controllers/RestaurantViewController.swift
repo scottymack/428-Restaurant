@@ -12,6 +12,7 @@ class RestaurantViewController: UIViewController {
 
 	@IBOutlet weak var imageText: UILabel!
 	@IBOutlet weak var restaurantName: UILabel!
+	@IBOutlet weak var restaurantNavItem: UINavigationItem!
 
 	var restaurant: Restaurant?
 
@@ -20,6 +21,7 @@ class RestaurantViewController: UIViewController {
 
 		imageText.text = imageText.text! + " for \(restaurant!.name)"
 		restaurantName.text = restaurant!.name
+		restaurantNavItem.title = restaurant?.name
 
 
 		getCompleteRestaurant()
