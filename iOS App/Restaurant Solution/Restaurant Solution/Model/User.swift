@@ -11,24 +11,104 @@
 
 import Foundation
 import UIKit
+import KeychainSwift
 
 class User
 {
+	static let tokenKeychainKey = "inHouseTokenKey"
+	static let passwordKeychainKey = "userPasswordKey"
+	static let emailUserDefaultsKey = "userEmailKey"
     
-    static let sharedInstance: User = {
-        let instance = User()
-        return instance }()
-    
-    // TODO: Fill this with data from the sign up process
+	static let sharedInstance = User()
+
+	static var token: String {
+		if let token = sharedInstance.apiToken {
+			print("returning \(token)")
+			return token
+		} else {
+			// probably go to login screen?
+			print("no auth")
+			return "no auth token"
+		}
+	}
+
 //    var profilePicture:UIImage = UIImage(named: "")!
-    var firstName = "First"
-    var lastName = "Last"
-    var email = "example@example.com"
-    var username = ""
-    var birthday = "01/01/1992"
-    var phoneNumber = "(801) 123 4567"
-    var gender = "Something"
-    var userID = "5"
-    var password = "johndoe"
-    var profilePicture = "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"
+	var firstName: String?
+    var lastName: String?
+    var email: String?
+    var username: String?
+    var birthday: String?
+    var phoneNumber: String?
+    var gender: String?
+	var apiToken: String?
+	var serverID: Int?
+
+	let keychain = KeychainSwift()
+
+	private init() {
+		firstName = "First"
+		lastName = "Last"
+		email = "example@example.com"
+		username = ""
+		birthday = "01/01/1992"
+		phoneNumber = "(801) 123 4567"
+		gender = "Something"
+	}
+
+	func storeUserInfo(username: String?, email: String?, token: String?, id: Int?, password: String?) {
+		if let username = username {
+			self.username = username
+		}
+
+		if let email = email {
+			self.email = email
+			store(email: email)
+		}
+
+		if let token = token {
+			self.apiToken = token
+			store(token: token)
+		}
+
+		if let id = id {
+			self.serverID = id
+		}
+
+		if let password = password {
+			store(password: password)
+		}
+	}
+
+	private func store(token: String) {
+		keychain.set(token, forKey: User.tokenKeychainKey)
+	}
+
+	private func store(password: String) {
+		keychain.set(password, forKey: User.passwordKeychainKey)
+	}
+
+	private func store(email: String) {
+		UserDefaults.standard.set(email, forKey: User.emailUserDefaultsKey)
+
+	}
+
+	func logout() {
+		keychain.delete(User.tokenKeychainKey)
+		keychain.delete(User.passwordKeychainKey)
+		UserDefaults.standard.removeObject(forKey: User.emailUserDefaultsKey)
+	}
+
+	func isLoggedIn() -> Bool {
+		if let keychainToken = keychain.get(User.tokenKeychainKey),
+			let defaultsEmail = UserDefaults.standard.value(forKey: User.emailUserDefaultsKey) as? String,
+			let _ = keychain.get(User.passwordKeychainKey) {
+			apiToken = keychainToken
+			email = defaultsEmail
+			// TODO: use password to get all User info, maybe asynchronously
+			return true
+		} else {
+			print("user not logged in")
+			return false
+		}
+	}
 }

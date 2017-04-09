@@ -10,18 +10,26 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
 
-	var restaurants = [Restaurant]()
+	var restaurantsList = [Restaurant]()
 
     override func viewDidLoad() {
 		print("viewDidLoad")
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+		getRestaurants()
     }
+
+	func getRestaurants() {
+		ServerCommunicator.GET(route: "/restaurants") { data in
+			if let restaurants = data["restaurants"] as? [[String: Any]] {
+				for restaurant in restaurants {
+					self.restaurantsList.append(Restaurant(json: restaurant))
+				}
+
+				self.tableView.reloadData()
+			}
+		}
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,34 +39,24 @@ class RestaurantTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // Could have multiple sections for type of restaurant?
-		print("numSections")
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-		print("numOfRows")
-        return 0
+        return restaurantsList.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantCell", for: indexPath) as! RestaurantTableViewCell
+
+		let restaurant = restaurantsList[indexPath.row]
+        cell.restaurant = restaurant
+		cell.name.text = restaurant.name
+		cell.address.text = restaurant.city + ", " + restaurant.state
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
     /*
     // Override to support editing the table view.
@@ -87,14 +85,14 @@ class RestaurantTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+		if let nextScene = segue.destination as? RestaurantViewController {
+			let cell = sender as! RestaurantTableViewCell
+			nextScene.restaurant = cell.restaurant
+		}
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
