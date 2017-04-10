@@ -43,6 +43,8 @@ class User
 	var apiToken: String?
 	var serverID: Int?
 
+	var visit: Visit?
+
 	let keychain = KeychainSwift()
 
 	private init() {

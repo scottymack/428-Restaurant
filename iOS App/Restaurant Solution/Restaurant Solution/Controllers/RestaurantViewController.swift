@@ -45,6 +45,9 @@ class RestaurantViewController: UIViewController {
 		}
 	}
     
+	@IBAction func checkIn(_ sender: Any) {
+		
+	}
 
 
     // MARK: - Navigation
