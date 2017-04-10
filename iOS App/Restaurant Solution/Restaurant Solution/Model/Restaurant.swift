@@ -13,7 +13,7 @@ class Restaurant {
 	let id: Int
 	let name: String
 	let address1: String
-	let address2: String
+	let address2: String?
 	let city: String
 	let state: String
 	let zip: String
@@ -23,7 +23,7 @@ class Restaurant {
 		id = json["id"] as! Int
 		name = json["name"] as! String
 		address1 = json["address_line1"] as! String
-		address2 = json["address_line2"] as! String
+		address2 = json["address_line2"] as? String
 		city = json["city"] as! String
 		state = json["state"] as! String
 		zip = json["zip_code"] as! String
