@@ -43,6 +43,8 @@ class User
 	var apiToken: String?
 	var serverID: Int?
 
+	var visit: Visit?
+
 	let keychain = KeychainSwift()
 
 	private init() {
@@ -101,14 +103,33 @@ class User
 	func isLoggedIn() -> Bool {
 		if let keychainToken = keychain.get(User.tokenKeychainKey),
 			let defaultsEmail = UserDefaults.standard.value(forKey: User.emailUserDefaultsKey) as? String,
-			let _ = keychain.get(User.passwordKeychainKey) {
+			let password = keychain.get(User.passwordKeychainKey) {
 			apiToken = keychainToken
 			email = defaultsEmail
-			// TODO: use password to get all User info, maybe asynchronously
+
+			ServerCommunicator.POST(options: ["route": "/login", "data": ["email": email, "password": password], "expect": "json"]) { data in
+				guard let data = data as? [String: Any], data["result"] as? String == "success" else {
+					//bad login, go to login page
+					print("bad login yikes")
+					return
+				}
+
+				let user = data["user"] as! [String: Any]
+				self.serverID = user["id"] as? Int
+				self.username = user["name"] as? String
+			}
 			return true
 		} else {
 			print("user not logged in")
 			return false
 		}
+	}
+
+	func visit(restaurantWithID id: Int) {
+		visit = Visit(userID: serverID!, restaurantID: id)
+	}
+
+	static func isCheckedIn() -> Bool {
+		return sharedInstance.visit != nil
 	}
 }

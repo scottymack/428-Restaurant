@@ -238,11 +238,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Av-oK-z4A">
+                                <rect key="frame" x="16" y="617" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check In"/>
+                                <connections>
+                                    <action selector="checkIn:" destination="PQL-7F-RY4" eventType="touchUpInside" id="RgU-eR-fXt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Restaurant Name" id="0Fd-D3-SbF"/>
                     <connections>
+                        <outlet property="checkInButton" destination="6Av-oK-z4A" id="M1R-At-k05"/>
                         <outlet property="imageText" destination="weP-LX-R2u" id="z7C-Cq-gcM"/>
                         <outlet property="restaurantName" destination="lOz-F6-vZm" id="MsM-hE-e65"/>
                         <outlet property="restaurantNavItem" destination="0Fd-D3-SbF" id="VHm-uw-7YE"/>

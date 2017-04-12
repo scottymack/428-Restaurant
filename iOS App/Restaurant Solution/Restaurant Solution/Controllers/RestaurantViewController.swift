@@ -13,7 +13,7 @@ class RestaurantViewController: UIViewController {
 	@IBOutlet weak var imageText: UILabel!
 	@IBOutlet weak var restaurantName: UILabel!
 	@IBOutlet weak var restaurantNavItem: UINavigationItem!
-
+	@IBOutlet weak var checkInButton: UIButton!
 	var restaurant: Restaurant?
 
     override func viewDidLoad() {
@@ -23,7 +23,9 @@ class RestaurantViewController: UIViewController {
 		restaurantName.text = restaurant!.name
 		restaurantNavItem.title = restaurant?.name
 
-
+		if User.isCheckedIn() {
+			checkInButton.isHidden = true
+		}
 		getCompleteRestaurant()
     }
 
@@ -45,6 +47,13 @@ class RestaurantViewController: UIViewController {
 		}
 	}
     
+	@IBAction func checkIn(_ sender: Any) {
+		if let restaurant = restaurant {
+			User.sharedInstance.visit(restaurantWithID: restaurant.id)
+			checkInButton.isHidden = true
+		}
+
+	}
 
 
     // MARK: - Navigation
